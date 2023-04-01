@@ -1,8 +1,10 @@
+import Landing from "@/components/Landing/Landing";
+
 const HomePage = () => {
   return (
     <>
       <div>
-        <h1 className="bg-red-500">Home Page</h1>
+        <Landing />
       </div>
     </>
   );
