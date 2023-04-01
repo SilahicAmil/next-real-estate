@@ -5,8 +5,8 @@ import Link from "next/link";
 const Navigation = ({}) => {
   return (
     <>
-      <div className="bg-gray-100 font-sans w-full  m-0">
-        <div className="bg-white shadow">
+      <div className="bg-gray-100 font-mono w-full ">
+        <div className="bg-white shadow relative">
           <div className="container mx-auto px-4">
             <div className="flex items-center justify-between py-4">
               <div>
@@ -15,10 +15,10 @@ const Navigation = ({}) => {
 
               <div className="hidden sm:flex sm:items-center">
                 <Link
-                  href="#"
+                  href="/rentals"
                   className="text-gray-800 text-sm font-semibold mr-4"
                 >
-                  Top Offers
+                  Rentals
                 </Link>
                 <Link
                   href="#"
@@ -57,7 +57,7 @@ const Navigation = ({}) => {
                   href="#"
                   className="text-gray-800 text-sm font-semibold  mb-1"
                 >
-                  Top Offers
+                  Rentals
                 </Link>
                 <a
                   href="#"
