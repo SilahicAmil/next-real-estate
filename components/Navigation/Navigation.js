@@ -16,26 +16,23 @@ const Navigation = ({}) => {
               <div className="hidden sm:flex sm:items-center">
                 <Link
                   href="#"
-                  className="text-gray-800 text-sm font-semibold hover:text-purple-600 mr-4"
+                  className="text-gray-800 text-sm font-semibold mr-4"
                 >
                   Top Offers
                 </Link>
                 <Link
                   href="#"
-                  className="text-gray-800 text-sm font-semibold hover:text-purple-600 mr-4"
+                  className="text-gray-800 text-sm font-semibold mr-4"
                 >
                   References
                 </Link>
                 <Link
                   href="#"
-                  className="text-gray-800 text-sm font-semibold hover:text-purple-600 mr-4"
+                  className="text-gray-800 text-sm font-semibold mr-4"
                 >
                   About Us
                 </Link>
-                <Link
-                  href="#"
-                  className="text-gray-800 text-sm font-semibold hover:text-purple-600"
-                >
+                <Link href="#" className="text-gray-800 text-sm font-semibold">
                   Our Team
                 </Link>
               </div>
@@ -43,12 +40,12 @@ const Navigation = ({}) => {
               <div className="hidden sm:flex sm:items-center">
                 <Link
                   href="#"
-                  className="text-white bg-[#1C3988] text-sm font-semibold border px-4 py-2 rounded-lg hover:text-purple-600 hover:border-purple-600"
+                  className="text-white bg-[#1C3988] text-sm font-semibold border px-4 py-2 rounded-md hover:rounded-xl hover:duration-200 "
                 >
                   Contact Us
                 </Link>
               </div>
-
+              {/* Mobile Menu */}
               <div className="sm:hidden cursor-pointer">
                 <AiOutlineMenu />
               </div>
@@ -58,32 +55,32 @@ const Navigation = ({}) => {
               <div className="flex flex-col">
                 <Link
                   href="#"
-                  className="text-gray-800 text-sm font-semibold hover:text-purple-600 mb-1"
+                  className="text-gray-800 text-sm font-semibold  mb-1"
                 >
                   Top Offers
                 </Link>
                 <a
                   href="#"
-                  className="text-gray-800 text-sm font-semibold hover:text-purple-600 mb-1"
+                  className="text-gray-800 text-sm font-semibold  mb-1"
                 >
                   References
                 </a>
                 <Link
                   href="#"
-                  className="text-gray-800 text-sm font-semibold hover:text-purple-600 mb-1"
+                  className="text-gray-800 text-sm font-semibold  mb-1"
                 >
                   About Us
                 </Link>
                 <Link
                   href="#"
-                  className="text-gray-800 text-sm font-semibold hover:text-purple-600 mb-1"
+                  className="text-gray-800 text-sm font-semibold mb-1"
                 >
                   Our Team
                 </Link>
                 <div className="flex justify-between items-center border-t-2 pt-2">
                   <a
                     href="#"
-                    className="text-gray-800 text-sm font-semibold border px-4 py-1 rounded-lg hover:text-purple-600 hover:border-purple-600"
+                    className="text-gray-800 text-sm font-semibold border px-4 py-1 rounded-lg"
                   >
                     Contact Us
                   </a>
