@@ -6,7 +6,7 @@ const Layout = ({ children }) => {
       <div className="">
         <Navigation />
       </div>
-      <main className="font-mono">{children}</main>
+      <main className="font-mono bg-[#FFFFFF]">{children}</main>
     </>
   );
 };
