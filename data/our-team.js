@@ -5,7 +5,7 @@ export const OUR_TEAM = [
     position: "CEO @ Real Estate",
     image: "/images/workplace.jpeg",
     snippet:
-      "I founded Real Estate in 2008, and since then we’ve been focused on building the best place to rent real estate. Today, more than 1.5 million people visit Real Estate each month from all around the world. We’re proud to be a part of the thriving real estate community!",
+      "I founded Real Estate in 2008, and since then we’ve been focused on building the best place to rent real estate. Today, more than 1.5 million people visit Real Estate each month from all around the world. I've been passionate about real estate since I was a kid, and I'm excited to help people find their perfect rental.",
   },
   {
     id: 2,

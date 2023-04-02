@@ -4,7 +4,7 @@ const LandingTestimonialCard = ({ name, twitterName, snippet, time }) => {
   return (
     <div className="w-full md:w-1/2 lg:w-1/3 p-3">
       <div className="p-6 h-full bg-white bg-opacity-60 border rounded-4xl">
-        <div className="flex flex-col justify-between h-full">
+        <div className="">
           <div className="mb-5 block">
             <div className="flex flex-wrap mb-4 -m-2">
               <div className="w-auto p-2">
