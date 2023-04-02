@@ -1,4 +1,5 @@
 import LandingTestimonialCard from "./LandingTestimonialCard";
+import { TESTIMONIAL_DATA } from "@/data/testimonial";
 
 const LandingTestimonials = ({}) => {
   return (
@@ -9,12 +10,11 @@ const LandingTestimonials = ({}) => {
             Don&apos;t just take our word for it
           </h2>
           <div className="flex flex-wrap -m-3">
-            <LandingTestimonialCard />
-            <LandingTestimonialCard />
-            <LandingTestimonialCard />
-            <LandingTestimonialCard />
-            <LandingTestimonialCard />
-            <LandingTestimonialCard />
+            {TESTIMONIAL_DATA.map((testimonial) => {
+              return (
+                <LandingTestimonialCard key={testimonial.id} {...testimonial} />
+              );
+            })}
           </div>
         </div>
       </section>
