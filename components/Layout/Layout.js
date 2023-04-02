@@ -1,3 +1,4 @@
+import Footer from "../UI/Footer";
 import Navigation from "../Navigation/Navigation";
 
 const Layout = ({ children }) => {
@@ -7,6 +8,7 @@ const Layout = ({ children }) => {
         <Navigation />
       </div>
       <main className="font-mono bg-[#FFFFFF]">{children}</main>
+      <Footer />
     </>
   );
 };
