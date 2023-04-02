@@ -59,12 +59,12 @@ const Navigation = ({}) => {
                 >
                   Rentals
                 </Link>
-                <a
+                <Link
                   href="#"
                   className="text-gray-800 text-sm font-semibold  mb-1"
                 >
                   References
-                </a>
+                </Link>
                 <Link
                   href="#"
                   className="text-gray-800 text-sm font-semibold  mb-1"

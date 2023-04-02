@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const LandingTeamCard = ({}) => {
+const LandingTeamCard = ({ snippet, image, name, position }) => {
   return (
     <div className="mb-8 sm:break-inside-avoid w-96 h-96">
       <blockquote className="rounded-xl bg-gray-50 p-6 shadow flex items-center flex-col ">
