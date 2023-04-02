@@ -1,5 +1,4 @@
 import { AiOutlineMenu } from "react-icons/ai";
-import Image from "next/image";
 import Link from "next/link";
 
 const Navigation = ({}) => {
@@ -24,7 +23,7 @@ const Navigation = ({}) => {
                   href="#"
                   className="text-gray-800 text-sm font-semibold mr-4"
                 >
-                  References
+                  Testimonials
                 </Link>
                 <Link
                   href="#"
@@ -63,7 +62,7 @@ const Navigation = ({}) => {
                   href="#"
                   className="text-gray-800 text-sm font-semibold  mb-1"
                 >
-                  References
+                  Testimonials
                 </Link>
                 <Link
                   href="#"
