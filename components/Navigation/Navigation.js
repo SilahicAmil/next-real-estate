@@ -9,7 +9,9 @@ const Navigation = ({}) => {
           <div className="container mx-auto px-4">
             <div className="flex items-center justify-between py-4">
               <div>
-                <h1>REAL ESTATE</h1>
+                <Link href="/" className="hover:underline">
+                  REAL ESTATE
+                </Link>
               </div>
 
               <div className="hidden sm:flex sm:items-center">
@@ -20,25 +22,31 @@ const Navigation = ({}) => {
                   Rentals
                 </Link>
                 <Link
-                  href="#"
+                  href="/#testimonials"
+                  scroll={false}
                   className="text-gray-800 text-sm font-semibold mr-4"
                 >
                   Testimonials
                 </Link>
                 <Link
-                  href="#"
+                  href="/#about"
+                  scroll={false}
                   className="text-gray-800 text-sm font-semibold mr-4"
                 >
                   About Us
                 </Link>
-                <Link href="#" className="text-gray-800 text-sm font-semibold">
+                <Link
+                  href="/#team"
+                  scroll={false}
+                  className="text-gray-800 text-sm font-semibold"
+                >
                   Our Team
                 </Link>
               </div>
 
               <div className="hidden sm:flex sm:items-center">
                 <Link
-                  href="#"
+                  href="/contact"
                   className="text-white bg-[#1C3988] text-sm font-semibold border px-4 py-2 rounded-md hover:rounded-xl hover:duration-200 "
                 >
                   Contact Us
@@ -77,12 +85,12 @@ const Navigation = ({}) => {
                   Our Team
                 </Link>
                 <div className="flex justify-between items-center border-t-2 pt-2">
-                  <a
-                    href="#"
+                  <Link
+                    href="/contact"
                     className="text-gray-800 text-sm font-semibold border px-4 py-1 rounded-lg"
                   >
                     Contact Us
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
