@@ -3,7 +3,7 @@ import Image from "next/image";
 const LandingAbout = ({}) => {
   return (
     <>
-      <section className="border-t border-b border-opacity-20 border-black ">
+      <section className="shadow-inner">
         <div className="mx-auto max-w-screen-xl px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8 ">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16 ">
             <div className="relative h-64 overflow-hidden rounded-lg sm:h-80  lg:h-full">
@@ -25,11 +25,12 @@ const LandingAbout = ({}) => {
                 We are a company that connects the world of real estate. We
                 provide a complete service for the sale, purchase or rental of
                 real estate. Our advantage is more than 15 years of experience
-                and soil in attractive locations across the world!
+                in attractive locations across the world!
                 <br />
                 <br />
-                We have a connection to all banks on the market, so we can solve
-                everything under one roof. By constantly innovating our business
+                <br />
+                We have a connection in all markets, so we can solve everything
+                under one roof. By constantly innovating our business
                 activities, we move forward and we are able to offer truly
                 above-standard services that set us apart from the competition.
               </p>
