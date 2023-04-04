@@ -4,7 +4,7 @@ import Link from "next/link";
 const Navigation = ({}) => {
   return (
     <>
-      <div className="bg-gray-100 font-mono w-full ">
+      <div className="bg-gray-100 font-mono w-full">
         <div className="bg-white shadow relative">
           <div className="container mx-auto px-4">
             <div className="flex items-center justify-between py-4">
@@ -62,19 +62,19 @@ const Navigation = ({}) => {
               <div className="flex flex-col">
                 <Link
                   href="#"
-                  className="text-gray-800 text-sm font-semibold  mb-1"
+                  className="text-gray-800 text-sm font-semibold mb-1"
                 >
                   Rentals
                 </Link>
                 <Link
                   href="#"
-                  className="text-gray-800 text-sm font-semibold  mb-1"
+                  className="text-gray-800 text-sm font-semibold mb-1"
                 >
                   Testimonials
                 </Link>
                 <Link
                   href="#"
-                  className="text-gray-800 text-sm font-semibold  mb-1"
+                  className="text-gray-800 text-sm font-semibold mb-1"
                 >
                   About Us
                 </Link>

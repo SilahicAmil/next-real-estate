@@ -4,7 +4,7 @@ import Navigation from "../Navigation/Navigation";
 const Layout = ({ children }) => {
   return (
     <>
-      <div className="">
+      <div>
         <Navigation />
       </div>
       <main className="font-mono bg-[#FFFFFF]">{children}</main>
