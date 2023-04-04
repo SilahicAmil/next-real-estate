@@ -4,8 +4,13 @@
 
 <!-- TODO -->
 
--- implement figma design layout
+-- Implement figma design layout
 
--- For Property Images use https://picsum.photos/ (or just find photos)
+-- Add filering below Rental Header
 
--- Upload fake images into DB (probably use supabase)
+-- Create AllRentalsCard component
+-- Create slug page to show more rentals
+-- Create [id] page for rentals
+-- Add Pricing and Bedrooms to supabase DB
+
+-- Upload fake images into DB (7-10 pictures)(use https://picsum.photos/ or unsplash)
