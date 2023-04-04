@@ -1,13 +1,11 @@
+import AllRentalsHeader from "@/components/AllRentals/AllRentalsHeader";
 import { supabase } from "@/lib/supabase";
 
 const AllRentalsPage = ({ rentals }) => {
   return (
     <>
       <div>
-        <h1>All Rentals Page</h1>
-        {rentals.map((item) => {
-          return <h1 key={item.uid}>{item.time_zone}</h1>;
-        })}
+        <AllRentalsHeader />
       </div>
     </>
   );
