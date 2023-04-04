@@ -4,8 +4,11 @@ import { supabase } from "@/lib/supabase";
 const AllRentalsPage = ({ rentals }) => {
   return (
     <>
-      <div>
+      <div className="mb-12 mt-12">
         <AllRentalsHeader />
+        {rentals.map((item) => {
+          return <h1 key={item.uid}>{item.time_zone}</h1>;
+        })}
       </div>
     </>
   );
