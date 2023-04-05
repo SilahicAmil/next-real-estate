@@ -2,14 +2,13 @@
 
 <!-- -- For property stuff use https://random-data-api.com/documentation - specifically /users or /addresses -->
 <!-- -- Upload fake data into DB -->
+<!-- -- Add filtering below Rental Header -->
 
 <!-- TODO -->
 
--- Implement figma design layout
+-- Implement figma design layout - ((WIP))
 
--- Add filtering below Rental Header
-
--- Create AllRentalsCard component
+-- Create Rentals Card component
 -- Create slug page to show more rentals - or load more on the same page IDK YET
 -- Create [id] page for rentals
 -- Add Pricing and Bedrooms to supabase DB
