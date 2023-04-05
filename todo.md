@@ -10,7 +10,7 @@
 -- Add filering below Rental Header
 
 -- Create AllRentalsCard component
--- Create slug page to show more rentals
+-- Create slug page to show more rentals - or load more on the same page IDK YET
 -- Create [id] page for rentals
 -- Add Pricing and Bedrooms to supabase DB
 
