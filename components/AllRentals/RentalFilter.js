@@ -1,19 +1,28 @@
+import { AiOutlineFilter } from "react-icons/ai";
+
 const RentalFilter = ({ locations }) => {
-  // Filer based off bedrooms, price and location dropdown
+  const filterFormSubmitHandler = (e) => {
+    e.preventDefault();
+    console.log("submitted");
+  };
+
   return (
     <>
-      <div className="bg-[#F3F3FA] h-full w-full">
+      <div className="bg-[#F3F3FA] h-full w-full font-sans">
         <div className="w-full flex justify-center items-center ">
-          <form className="flex flex-col gap-12 h-full mb-12 mt-12 justify-center">
+          <form
+            className="flex flex-col gap-12 h-full mb-12 mt-12 justify-center"
+            onSubmit={filterFormSubmitHandler}
+          >
             <h1 className="flex items-center justify-center text-sm text-gray-500">
               Filter Settings
             </h1>
-            <div className="w-full  bg-red-500 border"></div>
+            <div className="w-full bg-white border"></div>
             <div className="lg:flex gap-12 h-full">
               <div>
                 <select
                   id="Bedrooms"
-                  className="bg-red-500 p-2 rounded-md w-64 text-center h-full mb-2"
+                  className="bg-white p-2 rounded-md w-64 text-center h-full mb-2 tracking-wider"
                 >
                   <option value="Default-Bedroom">Number of Bedrooms</option>
                   <option value="1">1 Bedroom(s)</option>
@@ -24,7 +33,7 @@ const RentalFilter = ({ locations }) => {
               <div className="">
                 <select
                   id="Price"
-                  className="bg-red-500 p-2 w-64 rounded-md text-center h-full mb-2"
+                  className="bg-white p-2 w-64 rounded-md text-center h-full mb-2 tracking-wider"
                 >
                   <option value="Default-Price">Select Price Range</option>
                   {/* set first option to min price  */}
@@ -38,21 +47,27 @@ const RentalFilter = ({ locations }) => {
               <div className=" ">
                 <select
                   id="Locations"
-                  className="bg-red-500 p-2 w-64 rounded-md text-center h-full mb-2"
+                  className="bg-white p-2 w-64 rounded-md text-center h-full mb-2 tracking-wider"
                 >
                   <option value="Default-Location">Select Location</option>
                   {/* Map over locations here instead of timezone */}
                   {locations.map((location) => {
                     return (
-                      <option key={location.uid} value={location.name}>
+                      <option key={location.uid} value={location.time_zone}>
                         {location.time_zone}
                       </option>
                     );
                   })}
                 </select>
               </div>
-              <div className="bg-blue-500 rounded-md hover:rounded-lg hover:duration-200 justify-center items-center flex">
-                <button className="w-32 h-full p-2">Filter</button>
+              <div className="bg-[#1C3988] rounded-md hover:rounded-lg hover:duration-200 justify-center items-center flex">
+                <button
+                  className="w-32 h-full p-2  text-white flex items-center justify-center gap-4 "
+                  type="submit"
+                >
+                  <AiOutlineFilter className="text-lg" />
+                  <span className="tracking-wider text-lg">Filter</span>
+                </button>
               </div>
             </div>
           </form>
