@@ -10,7 +10,7 @@ const AllRentalsHeader = ({ rentals }) => {
           </h1>
           <p className="font-sans">Choose from the most advantageous offers</p>
         </div>
-        <RentalFilter locations={rentals} />
+        <RentalFilter rentals={rentals} />
       </section>
     </>
   );
