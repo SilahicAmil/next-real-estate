@@ -7,7 +7,7 @@
 
 -- Implement figma design layout
 
--- Add filering below Rental Header
+-- Add filtering below Rental Header
 
 -- Create AllRentalsCard component
 -- Create slug page to show more rentals - or load more on the same page IDK YET

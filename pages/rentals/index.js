@@ -5,10 +5,10 @@ const AllRentalsPage = ({ rentals }) => {
   return (
     <>
       <div className="mb-12 mt-12">
-        <AllRentalsHeader />
-        {rentals.map((item) => {
+        <AllRentalsHeader rentals={rentals} />
+        {/* {rentals.map((item) => {
           return <h1 key={item.uid}>{item.time_zone}</h1>;
-        })}
+        })} */}
       </div>
     </>
   );

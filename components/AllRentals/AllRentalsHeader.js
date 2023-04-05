@@ -1,4 +1,6 @@
-const AllRentalsHeader = ({}) => {
+import RentalFilter from "./RentalFilter";
+
+const AllRentalsHeader = ({ rentals }) => {
   return (
     <>
       <section>
@@ -8,6 +10,7 @@ const AllRentalsHeader = ({}) => {
           </h1>
           <p className="font-sans">Choose from the most advantageous offers</p>
         </div>
+        <RentalFilter locations={rentals} />
       </section>
     </>
   );
