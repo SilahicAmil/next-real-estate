@@ -19,7 +19,7 @@ const AllRentalsPage = ({ rentals }) => {
 };
 
 export const getServerSideProps = async () => {
-  const { data, error } = await supabase.from("real_data").select();
+  const { data, error } = await supabase.from("real_estate").select();
 
   return {
     props: {
