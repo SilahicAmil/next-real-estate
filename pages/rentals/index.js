@@ -6,13 +6,9 @@ const AllRentalsPage = ({ rentals }) => {
     <>
       <div className="mb-12 mt-12">
         <AllRentalsHeader rentals={rentals} />
-        {rentals.map((item) => {
-          return (
-            <h1 key={item.uid}>
-              {item.bedrooms}-{item.bathrooms}-{item.price}-{item.sqft}
-            </h1>
-          );
-        })}
+        {/* {rentals.map((item) => {
+          return <h1 key={item.uid}>{item.landlord_email}</h1>;
+        })} */}
       </div>
     </>
   );
