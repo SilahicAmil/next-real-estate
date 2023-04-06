@@ -6,16 +6,20 @@ const AllRentalsPage = ({ rentals }) => {
     <>
       <div className="mb-12 mt-12">
         <AllRentalsHeader rentals={rentals} />
-        {/* {rentals.map((item) => {
-          return <h1 key={item.uid}>{item.time_zone}</h1>;
-        })} */}
+        {rentals.map((item) => {
+          return (
+            <h1 key={item.uid}>
+              {item.bedrooms}-{item.bathrooms}-{item.price}-{item.sqft}
+            </h1>
+          );
+        })}
       </div>
     </>
   );
 };
 
 export const getServerSideProps = async () => {
-  const { data, error } = await supabase.from("addresses").select();
+  const { data, error } = await supabase.from("real_data").select();
 
   return {
     props: {
