@@ -13,13 +13,18 @@ const RentalsCard = ({ description, address, uid }) => {
             width={1000}
             height={1000}
           />
-          <div className="px-6 py-4">
+          <div className="px-6 py-4 w-full">
             <div className="font-bold text-xl mb-2">
-              <Link href={`/rentals/${uid}`} className="underline">
+              <Link
+                href={`/rentals/${uid}`}
+                className="underline font-merriweather"
+              >
                 {address}
               </Link>
             </div>
-            <p className="text-gray-600 text-sm h-16">{description}</p>
+            <p className="text-gray-600 text-sm h-12  font-sans">
+              {description}
+            </p>
           </div>
         </div>
       </div>
