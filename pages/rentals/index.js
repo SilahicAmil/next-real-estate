@@ -10,14 +10,7 @@ const AllRentalsPage = ({ rentals }) => {
   );
 
   const alphabetizedStates = removedDuplicateStates.sort((a, b) => {
-    // probably a better way to do this
-    if (a.state < b.state) {
-      return -1;
-    }
-    if (a.state > b.state) {
-      return 1;
-    }
-    return 0;
+    return a.state > b.state ? 1 : -1 || a.state < b.state ? -1 : 1 || 0;
   });
 
   return (
