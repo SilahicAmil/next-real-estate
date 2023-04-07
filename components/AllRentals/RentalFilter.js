@@ -8,7 +8,7 @@ const RentalFilter = ({ rentals }) => {
 
   return (
     <>
-      <div className="bg-[#F3F3FA] h-full w-full font-sans">
+      <section className="bg-[#F3F3FA] h-full w-full font-sans">
         <div className="w-full flex justify-center items-center">
           <form
             className="flex flex-col gap-12 h-full mb-12 mt-12 justify-center"
@@ -71,7 +71,7 @@ const RentalFilter = ({ rentals }) => {
             </div>
           </form>
         </div>
-      </div>
+      </section>
     </>
   );
 };
