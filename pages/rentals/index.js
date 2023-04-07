@@ -13,11 +13,7 @@ const AllRentalsPage = ({ rentals }) => {
   );
 
   const sortedBedrooms = removedDuplicateBedrooms.sort((a, b) => {
-    return a.bedrooms > b.bedrooms
-      ? 1
-      : -1 || a.bedrooms < b.bedrooms
-      ? -1
-      : 1 || 0;
+    return a.bedrooms - b.bedrooms;
   });
 
   const removedDuplicateStates = rentals.filter(
@@ -26,7 +22,7 @@ const AllRentalsPage = ({ rentals }) => {
   );
 
   const alphabetizedStates = removedDuplicateStates.sort((a, b) => {
-    return a.state > b.state ? 1 : -1 || a.state < b.state ? -1 : 1 || 0;
+    return a.state.localeCompare(b.state);
   });
 
   return (
