@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const RentalsCard = ({ description, address, uid }) => {
+const RentalsCard = ({ description, address, uid, price }) => {
   return (
     <>
       <div className="max-w-sm rounded-lg shadow-xl ">
@@ -21,7 +21,10 @@ const RentalsCard = ({ description, address, uid }) => {
               {address}
             </Link>
           </div>
-          <p className="text-gray-600 text-sm h-12  font-sans">{description}</p>
+          <div className="h-18  font-sans tracking-wide">
+            <span>$&nbsp;{price}</span>
+            <p className="text-gray-600 text-sm">{description}</p>
+          </div>
         </div>
       </div>
     </>
