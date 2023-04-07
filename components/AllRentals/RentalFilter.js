@@ -1,6 +1,6 @@
 import { AiOutlineFilter } from "react-icons/ai";
 
-const RentalFilter = ({ rentals }) => {
+const RentalFilter = ({ states, price, bedrooms }) => {
   const filterFormSubmitHandler = (e) => {
     e.preventDefault();
     console.log("submitted");
@@ -25,9 +25,13 @@ const RentalFilter = ({ rentals }) => {
                   className="bg-white p-2 rounded-md w-64 text-center h-full mb-2 tracking-wider text-lg"
                 >
                   <option value="Default-Bedroom">Number of Bedrooms</option>
-                  <option value="1">1 Bedroom(s)</option>
-                  <option value="2">2 Bedroom(s)</option>
-                  <option value="3+">3+ Bedroom(s)</option>
+                  {bedrooms.map((bedroom) => {
+                    return (
+                      <option key={bedroom} value={bedroom.bedroms}>
+                        {bedroom.bedrooms}
+                      </option>
+                    );
+                  })}
                 </select>
               </div>
               <div className="">
@@ -50,7 +54,7 @@ const RentalFilter = ({ rentals }) => {
                   className="bg-white p-2 w-64 rounded-md text-center h-full mb-2 tracking-wider text-lg"
                 >
                   <option value="Default-Location">Select Location</option>
-                  {rentals.map((location) => {
+                  {states.map((location) => {
                     return (
                       <option key={location.uid} value={location.state}>
                         {location.state}

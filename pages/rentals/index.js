@@ -9,6 +9,20 @@ const AllRentalsPage = ({ rentals }) => {
     (val, index, self) => index === self.findIndex((t) => t.state === val.state)
   );
 
+  const removedDuplicateBedrooms = rentals.filter(
+    // self is the array of the current element that is being filtered
+    (val, index, self) =>
+      index === self.findIndex((t) => t.bedrooms === val.bedrooms)
+  );
+
+  const sortedBedrooms = removedDuplicateBedrooms.sort((a, b) => {
+    return a.bedrooms > b.bedrooms
+      ? 1
+      : -1 || a.bedrooms < b.bedrooms
+      ? -1
+      : 1 || 0;
+  });
+
   const alphabetizedStates = removedDuplicateStates.sort((a, b) => {
     return a.state > b.state ? 1 : -1 || a.state < b.state ? -1 : 1 || 0;
   });
@@ -17,7 +31,11 @@ const AllRentalsPage = ({ rentals }) => {
     <>
       <div className="mb-12 mt-12">
         <AllRentalsHeader rentals={rentals} />
-        <RentalFilter rentals={alphabetizedStates} />
+        <RentalFilter
+          states={alphabetizedStates}
+          price={rentals.price}
+          bedrooms={sortedBedrooms}
+        />
         <div className="grid lg:grid-cols-4 md:grid-cols-3 lsm:grid-cols-2 sm:grid-cols-1 xs:grid-cols-1 gap-12 m-8 mb-24 mt-12">
           {rentals.map((rental) => {
             return (
