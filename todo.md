@@ -6,6 +6,7 @@
 <!-- -- Add Pricing and Bedrooms to supabase DB -->
 <!-- -- Create Rentals Card component -->
 <!-- -- Create [uid] page for rentals -->
+<!-- -- Filtered States in Alphabetical order -->
 
 <!-- TODO -->
 
