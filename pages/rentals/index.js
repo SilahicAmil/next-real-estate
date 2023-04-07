@@ -1,4 +1,5 @@
 import AllRentalsHeader from "@/components/AllRentals/AllRentalsHeader";
+import RentalFilter from "@/components/AllRentals/RentalFilter";
 import RentalsCard from "@/components/AllRentals/RentalsCard";
 import { supabase } from "@/lib/supabase";
 
@@ -7,6 +8,7 @@ const AllRentalsPage = ({ rentals }) => {
     <>
       <div className="mb-12 mt-12">
         <AllRentalsHeader rentals={rentals} />
+        <RentalFilter rentals={rentals} />
         <RentalsCard
           description={rentals[5].description}
           address={rentals[5].address}
