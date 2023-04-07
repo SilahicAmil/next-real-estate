@@ -12,7 +12,7 @@
 
 -- Implement figma design layout - ((WIP))
 
--- Create a show more button on /rentals
+-- Create a show more button on /rentals ((Not sure if I want to do this or just rely on filtering))
 
 -- Add Stripe API
 -- Add Date Range Picker on rental details page
