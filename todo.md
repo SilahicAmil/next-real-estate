@@ -4,14 +4,14 @@
 <!-- -- Upload fake data into DB -->
 <!-- -- Add filtering below Rental Header -->
 <!-- -- Add Pricing and Bedrooms to supabase DB -->
+<!-- -- Create Rentals Card component -->
+<!-- -- Create [uid] page for rentals -->
 
 <!-- TODO -->
 
 -- Implement figma design layout - ((WIP))
 
--- Create Rentals Card component
--- Create slug page to show more rentals - or load more on the same page IDK YET
--- Create [id] page for rentals
+-- Create a show more button on /rentals
 
 -- Add Stripe API
 -- Add Date Range Picker on rental details page
