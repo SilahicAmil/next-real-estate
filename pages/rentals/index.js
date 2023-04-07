@@ -5,10 +5,12 @@ import { supabase } from "@/lib/supabase";
 
 const AllRentalsPage = ({ rentals }) => {
   const removedDuplicateStates = rentals.filter(
+    // self is the array of the current element that is being filtered
     (val, index, self) => index === self.findIndex((t) => t.state === val.state)
   );
 
   const alphabetizedStates = removedDuplicateStates.sort((a, b) => {
+    // probably a better way to do this
     if (a.state < b.state) {
       return -1;
     }
