@@ -8,7 +8,7 @@ const AllRentalsPage = ({ rentals }) => {
     (val, index, self) => index === self.findIndex((t) => t.state === val.state)
   );
 
-  const alphabetizeStates = removedDuplicateStates.sort((a, b) => {
+  const alphabetizedStates = removedDuplicateStates.sort((a, b) => {
     if (a.state < b.state) {
       return -1;
     }
@@ -22,7 +22,7 @@ const AllRentalsPage = ({ rentals }) => {
     <>
       <div className="mb-12 mt-12">
         <AllRentalsHeader rentals={rentals} />
-        <RentalFilter rentals={alphabetizeStates} />
+        <RentalFilter rentals={alphabetizedStates} />
         <RentalsCard
           description={rentals[5].description}
           address={rentals[5].address}
