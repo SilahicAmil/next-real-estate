@@ -4,6 +4,8 @@ import RentalsCard from "@/components/AllRentals/RentalsCard";
 import { supabase } from "@/lib/supabase";
 
 const AllRentalsPage = ({ rentals }) => {
+  // maybe make a util function to remove duplicates and sort
+
   const removedDuplicateBedrooms = rentals.filter(
     // self is the array of the current element that is being filtered
     (val, index, self) =>
