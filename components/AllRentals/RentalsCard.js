@@ -9,8 +9,8 @@ const RentalsCard = ({ description, address, uid, price }) => {
           className="w-full h-64 rounded-t-lg object-cover"
           src="/images/workplace.jpeg"
           alt="Sunset in the mountains"
-          width={1000}
-          height={1000}
+          width={400}
+          height={400}
         />
         <div className="px-6 py-4 w-full">
           <div className="font-bold text-xl mb-2">
