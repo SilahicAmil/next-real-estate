@@ -17,8 +17,10 @@
 -- Create filter and sort utils function
 -- Implement filtering to update state in /rentals
 
+-- https://supabase.com/docs/reference/javascript/eq for fetching data for specific rental on [uid] page
+
 -- Add Stripe API
 -- Add Date Range Picker on rental details page
--- Implement modified [id] page from Figma (instead of all the description stuff - small desc and calendar to choose dates to "rent" and then use STRIPE API)
+-- Implement modified [uid] page from Figma (instead of all the description stuff - small desc and calendar to choose dates to "rent" and then use STRIPE API)
 
 -- Upload fake images into DB (7-10 pictures)(use https://picsum.photos/ or unsplash)
