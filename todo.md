@@ -8,6 +8,8 @@
 <!-- -- Create [uid] page for rentals -->
 <!-- -- Filtered States in Alphabetical order -->
 
+<!-- -- https://supabase.com/docs/reference/javascript/eq for fetching data for specific rental on [uid] page -->
+
 <!-- TODO -->
 
 -- Implement figma design layout - ((WIP))
@@ -16,8 +18,6 @@
 
 -- Create filter and sort utils function
 -- Implement filtering to update state in /rentals
-
--- https://supabase.com/docs/reference/javascript/eq for fetching data for specific rental on [uid] page
 
 -- Add Stripe API
 -- Add Date Range Picker on rental details page
