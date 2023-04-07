@@ -1,4 +1,5 @@
 import AllRentalsHeader from "@/components/AllRentals/AllRentalsHeader";
+import RentalsCard from "@/components/AllRentals/RentalsCard";
 import { supabase } from "@/lib/supabase";
 
 const AllRentalsPage = ({ rentals }) => {
@@ -6,9 +7,11 @@ const AllRentalsPage = ({ rentals }) => {
     <>
       <div className="mb-12 mt-12">
         <AllRentalsHeader rentals={rentals} />
-        {/* {rentals.map((item) => {
-          return <h1 key={item.uid}>{item.landlord_email}</h1>;
-        })} */}
+        <RentalsCard
+          description={rentals[5].description}
+          address={rentals[5].address}
+          uid={rentals[5].uid}
+        />
       </div>
     </>
   );
