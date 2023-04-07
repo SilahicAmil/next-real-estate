@@ -23,11 +23,18 @@ const AllRentalsPage = ({ rentals }) => {
       <div className="mb-12 mt-12">
         <AllRentalsHeader rentals={rentals} />
         <RentalFilter rentals={alphabetizedStates} />
-        <RentalsCard
-          description={rentals[5].description}
-          address={rentals[5].address}
-          uid={rentals[5].uid}
-        />
+        <div className="grid lg:grid-cols-4 md:grid-cols-3 lsm:grid-cols-2 sm:grid-cols-1 xs:grid-cols-1 gap-12 m-8">
+          {rentals.map((rental) => {
+            return (
+              <RentalsCard
+                key={rental.uid}
+                description={rental.description}
+                address={rental.address}
+                uid={rental.uid}
+              />
+            );
+          })}
+        </div>
       </div>
     </>
   );

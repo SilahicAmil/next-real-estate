@@ -1,8 +1,15 @@
-const RentalsDetailsPage = ({ rental }) => {
+import { useRouter } from "next/router";
+
+const RentalsDetailsPage = ({}) => {
+  const router = useRouter();
+
+  const uid = router.query.uid;
+
   return (
     <>
       <div>
-        <h1>Rentals Details PAge</h1>
+        <h1>Rentals Details Page</h1>
+        {uid}
       </div>
     </>
   );
