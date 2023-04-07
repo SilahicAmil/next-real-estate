@@ -30,7 +30,7 @@ const AllRentalsPage = ({ rentals }) => {
       <div className="mb-12 mt-12">
         <AllRentalsHeader rentals={rentals} />
         <RentalFilter states={alphabetizedStates} bedrooms={sortedBedrooms} />
-        <div className="grid lg:grid-cols-4 md:grid-cols-3 lsm:grid-cols-2 sm:grid-cols-1 xs:grid-cols-1 gap-12 m-8 mb-24 mt-12">
+        <div className="grid lg:grid-cols-4 md:grid-cols-3 lsm:grid-cols-2 sm:grid-cols-1 xs:grid-cols-1 gap-12 m-12 mb-24 mt-12 ">
           {rentals.map((rental) => {
             return (
               <RentalsCard

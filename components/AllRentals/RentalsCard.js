@@ -21,9 +21,9 @@ const RentalsCard = ({ description, address, uid, price }) => {
               {address}
             </Link>
           </div>
-          <div className="h-18  font-sans tracking-wide">
-            <span>$&nbsp;{price}</span>
-            <p className="text-gray-600 text-sm">{description}</p>
+          <div className="h-18  font-sans tracking-wide flex flex-col">
+            <span>${price}&nbsp;/day</span>
+            <p className="text-gray-600 text-sm mt-2">{description}</p>
           </div>
         </div>
       </div>

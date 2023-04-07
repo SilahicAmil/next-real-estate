@@ -14,6 +14,9 @@
 
 -- Create a show more button on /rentals ((Not sure if I want to do this or just rely on filtering))
 
+-- Create filter and sort utils function
+-- Implement filtering to update state in /rentals
+
 -- Add Stripe API
 -- Add Date Range Picker on rental details page
 -- Implement modified [id] page from Figma (instead of all the description stuff - small desc and calendar to choose dates to "rent" and then use STRIPE API)
