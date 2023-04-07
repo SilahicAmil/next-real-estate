@@ -4,10 +4,10 @@ import Link from "next/link";
 const RentalsCard = ({ description, address, uid }) => {
   return (
     <>
-      <div className="">
-        <div className="max-w-sm rounded shadow-xl">
+      <div>
+        <div className="max-w-sm rounded-lg shadow-xl ">
           <Image
-            className="w-full h-64"
+            className="w-full h-64 rounded-lg"
             src="/images/workplace.jpeg"
             alt="Sunset in the mountains"
             width={1000}
