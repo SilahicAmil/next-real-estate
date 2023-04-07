@@ -1,4 +1,4 @@
-const AllRentalsHeader = ({}) => {
+const AllRentalsHeader = () => {
   return (
     <>
       <section>
