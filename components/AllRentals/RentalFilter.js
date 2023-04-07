@@ -40,9 +40,9 @@ const RentalFilter = ({ states, bedrooms }) => {
                   className="bg-white p-2 w-64 rounded-md text-center h-full mb-2 tracking-wider text-lg"
                 >
                   <option value="Default-Price">Select Price Range</option>
-                  <option value="1">$0-1k</option>
-                  <option value="2">$1k-5k</option>
-                  <option value="3+">$5k+</option>
+                  <option value="0to1">$0-1k</option>
+                  <option value="1to5">$1k-5k</option>
+                  <option value="5plus">$5k+</option>
                 </select>
               </div>
               <div className=" ">
