@@ -3,7 +3,6 @@ import { AiOutlineFilter } from "react-icons/ai";
 const RentalFilter = ({ states, bedrooms, onUpdateFilter }) => {
   const filterFormSubmitHandler = (e) => {
     e.preventDefault();
-    console.log("submitted");
 
     // onUpdateFilter goes here to update state for rentals card in /rentals
     onUpdateFilter({

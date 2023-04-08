@@ -9,6 +9,7 @@
 <!-- -- Filtered States in Alphabetical order -->
 
 <!-- -- https://supabase.com/docs/reference/javascript/eq for fetching data for specific rental on [uid] page -->
+<!-- -- Implement filtering to update state in /rentals -->
 
 <!-- TODO -->
 
@@ -17,7 +18,8 @@
 -- Create a show more button on /rentals ((Not sure if I want to do this or just rely on filtering))
 
 -- Create filter and sort utils function
--- Implement filtering to update state in /rentals
+
+-- https://supabase.com/docs/reference/javascript/filter - check this out for filtering data directly in supabase
 
 -- Add Stripe API
 -- Add Date Range Picker on rental details page
