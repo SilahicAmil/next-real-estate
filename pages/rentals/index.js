@@ -6,7 +6,6 @@ import { useState } from "react";
 
 const AllRentalsPage = ({ rentals }) => {
   const [rentalsData, setRentalsData] = useState(rentals);
-  // maybe make a util function to remove duplicates and sort
 
   const removedDuplicateBedrooms = rentals.filter(
     // self is the array of the current element that is being filtered
@@ -19,7 +18,6 @@ const AllRentalsPage = ({ rentals }) => {
   });
 
   const removedDuplicateStates = rentals.filter(
-    // self is the array of the current element that is being filtered
     (val, index, self) => index === self.findIndex((t) => t.state === val.state)
   );
 
