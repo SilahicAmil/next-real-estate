@@ -1,11 +1,19 @@
+import { use, useRef } from "react";
+
 import { AiOutlineFilter } from "react-icons/ai";
 
-const RentalFilter = ({ states, bedrooms }) => {
+const RentalFilter = ({ states, bedrooms, onUpdateFilter }) => {
+  const bedroomRef = useRef();
   const filterFormSubmitHandler = (e) => {
     e.preventDefault();
     console.log("submitted");
 
     // onUpdateFilter goes here to update state for rentals card in /rentals
+    onUpdateFilter({
+      bedrooms: e.target.Bedrooms.value,
+      location: e.target.Locations.value,
+      price: e.target.Price.value,
+    });
   };
 
   return (
@@ -26,10 +34,14 @@ const RentalFilter = ({ states, bedrooms }) => {
                   id="Bedrooms"
                   className="bg-white p-2 rounded-md w-64 text-center h-full mb-2 tracking-wider text-lg"
                 >
-                  <option value="Default-Bedroom">Number of Bedrooms</option>
+                  <option value="No-Bedroom">Number of Bedrooms</option>
                   {bedrooms.map((bedroom) => {
                     return (
-                      <option key={bedroom.bedrooms} value={bedroom.bedroms}>
+                      <option
+                        key={bedroom.bedrooms}
+                        value={bedroom.bedroms}
+                        ref={bedroomRef}
+                      >
                         {bedroom.bedrooms}
                       </option>
                     );
@@ -42,9 +54,9 @@ const RentalFilter = ({ states, bedrooms }) => {
                   className="bg-white p-2 w-64 rounded-md text-center h-full mb-2 tracking-wider text-lg"
                 >
                   <option value="Default-Price">Select Price Range</option>
-                  <option value="0to1">$0-1k</option>
-                  <option value="1to5">$1k-5k</option>
-                  <option value="5plus">$5k+</option>
+                  <option value="0-100">$0-100</option>
+                  <option value="100-500">$100-500</option>
+                  <option value="500+">$500+</option>
                 </select>
               </div>
               <div>

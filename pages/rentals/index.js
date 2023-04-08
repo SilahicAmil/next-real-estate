@@ -2,8 +2,10 @@ import AllRentalsHeader from "@/components/AllRentals/AllRentalsHeader";
 import RentalFilter from "@/components/AllRentals/RentalFilter";
 import RentalsCard from "@/components/AllRentals/RentalsCard";
 import { supabase } from "@/lib/supabase";
+import { useState } from "react";
 
 const AllRentalsPage = ({ rentals }) => {
+  const [rentalsData, setRentalsData] = useState(rentals);
   // maybe make a util function to remove duplicates and sort
 
   const removedDuplicateBedrooms = rentals.filter(
@@ -25,13 +27,30 @@ const AllRentalsPage = ({ rentals }) => {
     return a.state.localeCompare(b.state);
   });
 
+  const filterUpdateHandler = (filterData) => {
+    const { bedrooms, location, price } = filterData;
+
+    const filteredRentals = rentals.filter((rental) => {
+      return (
+        rental.bedrooms === bedrooms ||
+        rental.state === location ||
+        rental.price === price
+      );
+    });
+    setRentalsData(filteredRentals);
+  };
+
   return (
     <>
       <div className="mb-12 mt-12">
         <AllRentalsHeader rentals={rentals} />
-        <RentalFilter states={alphabetizedStates} bedrooms={sortedBedrooms} />
+        <RentalFilter
+          states={alphabetizedStates}
+          bedrooms={sortedBedrooms}
+          onUpdateFilter={filterUpdateHandler}
+        />
         <div className="grid lg:grid-cols-4 md:grid-cols-3 lsm:grid-cols-2 sm:grid-cols-1 xs:grid-cols-1 gap-12 m-12 mb-24 mt-12 ">
-          {rentals.map((rental) => {
+          {rentalsData.map((rental) => {
             return (
               <RentalsCard
                 key={rental.uid}
