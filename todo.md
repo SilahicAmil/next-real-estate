@@ -5,6 +5,7 @@
 <!-- -- Add filtering below Rental Header -->
 <!-- -- Add Pricing and Bedrooms to supabase DB -->
 <!-- -- Create Rentals Card component -->
+
 <!-- -- Create [uid] page for rentals -->
 <!-- -- Filtered States in Alphabetical order -->
 
@@ -16,6 +17,8 @@
 -- Implement figma design layout - ((WIP))
 
 -- Create a show more button on /rentals ((Not sure if I want to do this or just rely on filtering))
+
+-- Might remove Bedroom Filtering and maybe Price. ((Not sure for now))
 
 -- https://supabase.com/docs/reference/javascript/filter - check this out for filtering data directly in supabase
 
