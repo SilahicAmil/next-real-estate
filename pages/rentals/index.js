@@ -28,7 +28,18 @@ const AllRentalsPage = ({ rentals }) => {
   });
 
   const filterUpdateHandler = (filterData) => {
+    // this filter is going to be very complex
     const { bedrooms, location, price } = filterData;
+    console.log(price);
+
+    if (
+      bedrooms === "No-Bedroom" &&
+      location === "No-Location" &&
+      price === "No-Price"
+    ) {
+      setRentalsData(rentals);
+      return;
+    }
 
     const filteredRentals = rentals.filter((rental) => {
       return (

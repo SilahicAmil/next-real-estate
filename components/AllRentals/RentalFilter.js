@@ -1,9 +1,6 @@
-import { use, useRef } from "react";
-
 import { AiOutlineFilter } from "react-icons/ai";
 
 const RentalFilter = ({ states, bedrooms, onUpdateFilter }) => {
-  const bedroomRef = useRef();
   const filterFormSubmitHandler = (e) => {
     e.preventDefault();
     console.log("submitted");
@@ -37,11 +34,7 @@ const RentalFilter = ({ states, bedrooms, onUpdateFilter }) => {
                   <option value="No-Bedroom">Number of Bedrooms</option>
                   {bedrooms.map((bedroom) => {
                     return (
-                      <option
-                        key={bedroom.bedrooms}
-                        value={bedroom.bedroms}
-                        ref={bedroomRef}
-                      >
+                      <option key={bedroom.bedrooms} value={bedroom.bedroms}>
                         {bedroom.bedrooms}
                       </option>
                     );
@@ -53,7 +46,7 @@ const RentalFilter = ({ states, bedrooms, onUpdateFilter }) => {
                   id="Price"
                   className="bg-white p-2 w-64 rounded-md text-center h-full mb-2 tracking-wider text-lg"
                 >
-                  <option value="Default-Price">Select Price Range</option>
+                  <option value="No-Price">Select Price Range</option>
                   <option value="0-100">$0-100</option>
                   <option value="100-500">$100-500</option>
                   <option value="500+">$500+</option>
@@ -64,7 +57,7 @@ const RentalFilter = ({ states, bedrooms, onUpdateFilter }) => {
                   id="Locations"
                   className="bg-white p-2 w-64 rounded-md text-center h-full mb-2 tracking-wider text-lg"
                 >
-                  <option value="Default-Location">Select Location</option>
+                  <option value="No-Location">Select Location</option>
                   {states.map((location) => {
                     return (
                       <option key={location.uid} value={location.state}>
