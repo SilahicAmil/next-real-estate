@@ -30,7 +30,7 @@ const AllRentalsPage = ({ rentals }) => {
   const filterUpdateHandler = (filterData) => {
     // this filter is going to be very complex
     // Possibly find a way to make it more efficient
-    // See if I can filer directly from supabase with all those filters
+    // See if I can filer directly from supabase with all those filters - in an API file
     // and just handle like 0-100
     const { bedrooms, location, price } = filterData;
 
@@ -81,7 +81,7 @@ const AllRentalsPage = ({ rentals }) => {
 };
 
 export const getServerSideProps = async () => {
-  const { data, error } = await supabase.from("real_estate").select();
+  const { data } = await supabase.from("real_estate").select();
 
   return {
     props: {
