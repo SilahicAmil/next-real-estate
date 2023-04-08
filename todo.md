@@ -23,7 +23,7 @@
 -- https://supabase.com/docs/reference/javascript/filter - check this out for filtering data directly in supabase
 
 -- Add Stripe API
--- Add Date Range Picker on rental details page
+-- Add Date Range Picker on rental details page - https://www.npmjs.com/package/react-dates
 -- Implement modified [uid] page from Figma (instead of all the description stuff - small desc and calendar to choose dates to "rent" and then use STRIPE API)
 
 -- Upload fake images into DB (7-10 pictures)(use https://picsum.photos/ or unsplash)
