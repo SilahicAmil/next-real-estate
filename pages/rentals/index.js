@@ -31,7 +31,7 @@ const AllRentalsPage = ({ rentals }) => {
     // this filter is going to be very complex
     // Possibly find a way to make it more efficient
     // See if I can filer directly from supabase with all those filters
-    // and just handle like 0-100, 100-500, 500+ in the frontend
+    // and just handle like 0-100
     const { bedrooms, location, price } = filterData;
 
     if (

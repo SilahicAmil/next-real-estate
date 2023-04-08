@@ -17,8 +17,6 @@
 
 -- Create a show more button on /rentals ((Not sure if I want to do this or just rely on filtering))
 
--- Create filter and sort utils function
-
 -- https://supabase.com/docs/reference/javascript/filter - check this out for filtering data directly in supabase
 
 -- Add Stripe API
