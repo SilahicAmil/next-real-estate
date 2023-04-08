@@ -24,7 +24,7 @@ const RentalsDetailsPage = ({ rental }) => {
 export const getServerSideProps = async (context) => {
   const { uid } = context.query;
 
-  const { data, error } = await supabase
+  const { data } = await supabase
     .from("real_estate")
     .select()
     .eq("uid", `${uid}`);
