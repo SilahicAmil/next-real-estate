@@ -7,7 +7,7 @@ const LandingTeamCard = ({ snippet, image, name, position }) => {
         <Image
           alt="Photo of Tim Cook"
           src={image}
-          className="h-64 w-64 rounded-full object-cover"
+          className="h-64 w-64 rounded-full object-cover "
           width={200}
           height={200}
         />

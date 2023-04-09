@@ -13,7 +13,7 @@ const LandingTestimonialCard = ({ name, twitterName, snippet, time }) => {
                   alt=""
                   height={1000}
                   width={1000}
-                  className="w-16 h-16 rounded-full"
+                  className="w-16 h-16 rounded-full object-cover"
                 />
               </div>
               <div className="w-auto p-2">
