@@ -20,7 +20,7 @@
 
 -- Might remove Bedroom Filtering and maybe Price. ((Not sure for now))
 
--- Add Redux for STRIPE Stuff - Basically and Add to Cart type thing
+-- Add Redux for STRIPE Stuff - Basically and Add to Cart type thing ((maybe idk))
 
 -- https://supabase.com/docs/reference/javascript/filter - check this out for filtering data directly in supabase
 
