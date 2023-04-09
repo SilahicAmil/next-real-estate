@@ -15,16 +15,12 @@
 
 <!-- TODO -->
 
--- Create a show more button on /rentals ((Not sure if I want to do this or just rely on filtering))
-
--- Add Redux for STRIPE Stuff - Basically and Add to Cart type thing ((maybe idk))
-
 -- https://supabase.com/docs/reference/javascript/filter - check this out for filtering data directly in supabase (API) instead of client side
 
--- Add Stripe API
+-- Add Stripe API ((On Payment should have confirmation code sent to email and text))
 
 -- Add Date Range Picker on rental details page - https://www.npmjs.com/package/react-dates
 
--- Implement modified [uid] page from Figma (instead of all the description stuff - small desc and calendar to choose dates to "rent" and then use STRIPE API) - WIP
+-- Implement modified [uid] page from Figma (instead of all the description stuff - small desc and calendar to choose dates to "rent" and then use STRIPE API)
 
--- Upload fake images into DB (7-10 pictures)(use https://picsum.photos/ or unsplash)
+-- Upload fake images into DB (7-10 pictures)(use https://picsum.photos/ or unsplash) or just store locally
