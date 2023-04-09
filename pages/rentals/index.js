@@ -21,10 +21,11 @@ const AllRentalsPage = ({ rentals }) => {
     (val, index, self) => index === self.findIndex((t) => t.state === val.state)
   );
 
-  const alphabetizedStates = removedDuplicateStates.sort((a, b) => {
+  const sortedStates = removedDuplicateStates.sort((a, b) => {
     return a.state.localeCompare(b.state);
   });
 
+  // this will eventually be async from "/api/filterUpdater" or something like that
   const filterUpdateHandler = (filterData) => {
     // this filter is going to be very complex
     // Possibly find a way to make it more efficient
@@ -59,7 +60,7 @@ const AllRentalsPage = ({ rentals }) => {
           title="Search for a Rental"
         />
         <RentalFilter
-          states={alphabetizedStates}
+          states={sortedStates}
           bedrooms={sortedBedrooms}
           onUpdateFilter={filterUpdateHandler}
         />

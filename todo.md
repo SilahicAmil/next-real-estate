@@ -19,6 +19,10 @@
 
 -- Add Stripe API ((On Payment should have confirmation code sent to email and text))
 
+-- Figure out how to handle if a route is available like "/rentals/1" ((since we use uid and its a long custom string)) probably just create a custom 500 page or something
+
+-- Create Custom 404 Page
+
 -- Add Date Range Picker on rental details page - https://www.npmjs.com/package/react-dates
 
 -- Implement modified [uid] page from Figma (instead of all the description stuff - small desc and calendar to choose dates to "rent" and then use STRIPE API)

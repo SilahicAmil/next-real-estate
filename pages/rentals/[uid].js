@@ -12,7 +12,6 @@ const RentalsDetailsPage = ({ rental }) => {
       <div className="mt-12 mb-12">
         <Header subtext={rental.description} title={rental.address} />
         <p>{uid}</p>
-        <p></p>
       </div>
     </>
   );
@@ -21,10 +20,14 @@ const RentalsDetailsPage = ({ rental }) => {
 export const getServerSideProps = async (context) => {
   const { uid } = context.query;
 
-  const { data } = await supabase
+  const { data, error } = await supabase
     .from("real_estate")
     .select()
     .eq("uid", `${uid}`);
+
+  if (error) {
+    console.log(error);
+  }
 
   return {
     props: {
