@@ -1,3 +1,4 @@
+import Header from "@/components/UI/Header";
 import { supabase } from "@/lib/supabase";
 import { useRouter } from "next/router";
 
@@ -8,14 +9,10 @@ const RentalsDetailsPage = ({ rental }) => {
 
   return (
     <>
-      <div>
-        <h1>Rentals Details Page</h1>
+      <div className="mt-12 mb-12">
+        <Header subtext={rental.description} title={rental.address} />
         <p>{uid}</p>
-        <p>
-          {rental.map((rent) => {
-            return rent.landlord_name;
-          })}
-        </p>
+        <p></p>
       </div>
     </>
   );
@@ -31,7 +28,7 @@ export const getServerSideProps = async (context) => {
 
   return {
     props: {
-      rental: data,
+      rental: data[0],
     },
   };
 };

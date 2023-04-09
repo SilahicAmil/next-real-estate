@@ -1,4 +1,4 @@
-import AllRentalsHeader from "@/components/AllRentals/AllRentalsHeader";
+import Header from "@/components/UI/Header";
 import RentalFilter from "@/components/AllRentals/RentalFilter";
 import RentalsCard from "@/components/AllRentals/RentalsCard";
 import { supabase } from "@/lib/supabase";
@@ -54,7 +54,10 @@ const AllRentalsPage = ({ rentals }) => {
   return (
     <>
       <div className="mb-12 mt-12">
-        <AllRentalsHeader rentals={rentals} />
+        <Header
+          subtext="Choose from the most advantageous offers"
+          title="Search for a Rental"
+        />
         <RentalFilter
           states={alphabetizedStates}
           bedrooms={sortedBedrooms}
