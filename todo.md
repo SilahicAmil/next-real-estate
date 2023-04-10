@@ -13,6 +13,7 @@
 <!-- -- Implement filtering to update state in /rentals -->
 <!-- -- Implement figma design layout - ((WIP)) -->
 <!-- -- Create 404 Page -->
+<!-- -- Create Landlord Card Component -->
 
 <!-- TODO -->
 
@@ -20,11 +21,9 @@
 
 -- Add Stripe API ((On Payment should have confirmation code sent to email and text))
 
--- Figure out how to handle if a route is available like "/rentals/1" ((since we use uid and its a long custom string)) probably just create a custom 500 page or something
+-- Figure out how to handle if a route is available like "/rentals/notValid" probably just create a custom 500 page or something
 
 -- Create Custom 404 Page
-
--- Create Landlord Card Component
 
 -- Add Date Range Picker on rental details page - https://www.npmjs.com/package/react-dates
 
