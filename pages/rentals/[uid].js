@@ -2,13 +2,8 @@ import Header from "@/components/UI/Header";
 import LandlordCard from "@/components/RentalsDetails/LandlordCard";
 import PhotoCarousel from "@/components/RentalsDetails/PhotoCarousel";
 import { supabase } from "@/lib/supabase";
-import { useRouter } from "next/router";
 
 const RentalsDetailsPage = ({ rental }) => {
-  const router = useRouter();
-
-  const uid = router.query.uid;
-
   return (
     <>
       <div className="mt-12 mb-12">
