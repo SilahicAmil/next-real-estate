@@ -17,6 +17,9 @@ const RentalsDetailsPage = ({ rental }) => {
           phone={rental.landlord_phone}
         />
       </div>
+      <div>
+        <h1>RENTAL INFORMATION HERE</h1>
+      </div>
     </>
   );
 };
