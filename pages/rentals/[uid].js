@@ -19,6 +19,7 @@ const RentalsDetailsPage = ({ rental }) => {
         <LandlordCard
           name={rental.landlord_name}
           email={rental.landlord_email}
+          phone={rental.landlord_phone}
         />
       </div>
     </>
