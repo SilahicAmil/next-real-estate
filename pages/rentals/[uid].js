@@ -1,4 +1,5 @@
 import Header from "@/components/UI/Header";
+import PhotoCarousel from "@/components/RentalsDetails/PhotoCarousel";
 import { supabase } from "@/lib/supabase";
 import { useRouter } from "next/router";
 
@@ -11,7 +12,10 @@ const RentalsDetailsPage = ({ rental }) => {
     <>
       <div className="mt-12 mb-12">
         <Header subtext={rental.description} title={rental.address} />
-        <p>{uid}</p>
+      </div>
+      <div className="flex flex-1 w-full justify-center">
+        <PhotoCarousel />
+        <h1>123</h1>
       </div>
     </>
   );
