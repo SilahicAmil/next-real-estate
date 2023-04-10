@@ -1,10 +1,11 @@
 import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
 
 import Image from "next/image";
+import Link from "next/link";
 
 const LandlordCard = ({ name, email, phone }) => {
   return (
-    <div className="lg:w-1/4 flex-col flex items-center justify-center bg-[#F3F3FA] rounded-md sm:mt-6 lg:mt-0 h-full p-12">
+    <div className="lg:w-1/4 flex-col flex items-center justify-center bg-[#F3F3FA] rounded-lg sm:mt-6 lg:mt-0 h-full p-12">
       <div className="w-48 h-48 mt-6 mb-6">
         <Image
           alt={name}
@@ -25,7 +26,9 @@ const LandlordCard = ({ name, email, phone }) => {
           +1&nbsp;{phone}
         </p>
       </div>
-      <button className="mt-4 underline">View Landlord Profile</button>
+      <Link href="#" className="mt-4 underline">
+        View Landlord Profile
+      </Link>
     </div>
   );
 };
