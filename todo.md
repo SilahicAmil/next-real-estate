@@ -25,6 +25,10 @@
 
 -- Create Custom 404 Page
 
+-- Add Landlord Profile
+
+-- Landlord profile should show the landlord infrormation and their rentals
+
 -- Add Date Range Picker on rental details page - https://www.npmjs.com/package/react-dates
 
 -- Implement modified [uid] page from Figma (instead of all the description stuff - small desc and calendar to choose dates to "rent" and then use STRIPE API)
