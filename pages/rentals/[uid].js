@@ -13,7 +13,7 @@ const RentalsDetailsPage = ({ rental }) => {
       <div className="mt-12 mb-12">
         <Header subtext={rental.description} title={rental.address} />
       </div>
-      <div className="lg:flex justify-center gap-24 mb-12 mt-12 h-full">
+      <div className="lg:flex justify-center gap-24 mb-12 mt-12 h-full shadow-inner pt-12">
         <PhotoCarousel />
         <div className="lg:w-1/4 flex-col flex items-center bg-red-500 rounded-md">
           <h1>{rental.landlord_name}</h1>
