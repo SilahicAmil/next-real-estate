@@ -2,20 +2,15 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 import { Carousel } from "react-responsive-carousel";
 import Image from "next/image";
+import PhotoItem from "./PhotoItem";
 
-const PhotoCarousel = () => {
+const PhotoCarousel = ({ imageData }) => {
   return (
     <>
-      <div className="w-1/2 h-full">
+      <div className="lg:w-1/2 h-full">
         <Carousel showArrows={true}>
-          <div>
-            <Image
-              alt="123"
-              src="/images/test-photo.jpeg"
-              width={400}
-              height={400}
-            />
-          </div>
+          {/* Map Over PhotoItem */}
+          <PhotoItem />
           <div>
             <Image
               alt="123"

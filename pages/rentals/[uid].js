@@ -13,9 +13,11 @@ const RentalsDetailsPage = ({ rental }) => {
       <div className="mt-12 mb-12">
         <Header subtext={rental.description} title={rental.address} />
       </div>
-      <div className="flex flex-1 w-full justify-center">
+      <div className="lg:flex flex-1  justify-around mb-12 mt-12">
         <PhotoCarousel />
-        <h1>123</h1>
+        <div className="w-1/4 flex justify-center bg-red-500">
+          <h1>{rental.landlord_email}</h1>
+        </div>
       </div>
     </>
   );
