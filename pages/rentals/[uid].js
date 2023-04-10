@@ -32,8 +32,10 @@ export const getServerSideProps = async (context) => {
     .select()
     .eq("uid", `${uid}`);
 
-  if (error) {
-    console.log(error);
+  if (!data) {
+    return {
+      notFound: true,
+    };
   }
 
   return {
