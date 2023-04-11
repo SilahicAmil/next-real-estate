@@ -21,7 +21,7 @@
 
 -- Add Stripe API ((On Payment should have confirmation code sent to email and text))
 
--- Figure out how to handle if a route is available like "/rentals/notValid" probably just create a custom 500 page or something
+-- Figure out how to handle if a route is unavailable like "/rentals/notValid" ((probably just create a custom 500 page or something))
 
 -- Create Custom 404 Page
 
