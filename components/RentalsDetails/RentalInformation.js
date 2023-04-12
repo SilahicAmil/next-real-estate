@@ -1,27 +1,30 @@
-import { AiOutlineHome } from "react-icons/ai";
+import { AiOutlineHome, AiOutlineLayout } from "react-icons/ai";
 
-const RentalInformation = () => {
+import { MdAttachMoney } from "react-icons/md";
+import { VscLocation } from "react-icons/vsc";
+
+const RentalInformation = ({ sqft, location, pricing }) => {
   return (
     <>
-      <div className="lg:flex justify-around gap-24 mb-12 mt-12 h-full shadow-inner pt-12">
-        <div className="flex items-center ">
-          <AiOutlineHome className="text-4xl" />
+      <div className="lg:flex items-center justify-around h-full lg:pt-12 shadow-inner font-merriweather">
+        <div className="flex items-center gap-2">
+          <AiOutlineHome className="text-3xl" />
           <p className="flex text-xl">Apartment</p>
         </div>
-        <div className="flex">
-          <AiOutlineHome />
+        <div className="flex items-center gap-2">
+          <AiOutlineLayout className="text-3xl" />
 
-          <p>SQFT</p>
+          <p className="text-xl">{sqft}&nbsp;SQFT</p>
         </div>
-        <div className="flex">
-          <AiOutlineHome />
+        <div className="flex items-center gap-2">
+          <VscLocation className="text-3xl" />
 
-          <p>Location</p>
+          <p className="text-xl">{location}</p>
         </div>
-        <div className="flex">
-          <AiOutlineHome />
+        <div className="flex items-center gap-2">
+          <MdAttachMoney className="text-3xl" />
 
-          <p>Pricing</p>
+          <p className="text-xl">{pricing}/day</p>
         </div>
       </div>
     </>

@@ -18,8 +18,12 @@ const RentalsDetailsPage = ({ rental }) => {
           phone={rental.landlord_phone}
         />
       </div>
-      <div>
-        <RentalInformation />
+      <div className="mt-12 mb-12 h-24">
+        <RentalInformation
+          sqft={rental.sqft}
+          location={rental.state}
+          pricing={rental.price}
+        />
       </div>
     </>
   );
