@@ -1,6 +1,7 @@
 import Header from "@/components/UI/Header";
 import LandlordCard from "@/components/RentalsDetails/LandlordCard";
 import PhotoCarousel from "@/components/RentalsDetails/PhotoCarousel";
+import RentalInformation from "@/components/RentalsDetails/RentalInformation";
 import { supabase } from "@/lib/supabase";
 
 const RentalsDetailsPage = ({ rental }) => {
@@ -18,7 +19,7 @@ const RentalsDetailsPage = ({ rental }) => {
         />
       </div>
       <div>
-        <h1>RENTAL INFORMATION HERE</h1>
+        <RentalInformation />
       </div>
     </>
   );
