@@ -9,21 +9,21 @@ const RentalInformation = ({ sqft, location, pricing }) => {
       <div className="mt-12 mb-12 h-24">
         <div className="lg:flex items-center justify-around h-full lg:pt-12 shadow-inner font-merriweather">
           <div className="flex items-center gap-2">
-            <AiOutlineHome className="text-3xl" />
+            <AiOutlineHome className="text-3xl text-[#4764C3]" />
             <p className="flex text-xl">Apartment</p>
           </div>
           <div className="flex items-center gap-2">
-            <AiOutlineLayout className="text-3xl" />
+            <AiOutlineLayout className="text-3xl text-[#4764C3]" />
 
             <p className="text-xl">{sqft}&nbsp;SQFT</p>
           </div>
           <div className="flex items-center gap-2">
-            <VscLocation className="text-3xl" />
+            <VscLocation className="text-3xl text-[#4764C3]" />
 
             <p className="text-xl">{location}</p>
           </div>
           <div className="flex items-center gap-2">
-            <MdAttachMoney className="text-3xl" />
+            <MdAttachMoney className="text-3xl text-[#4764C3]" />
 
             <p className="text-xl">{pricing}/day</p>
           </div>
