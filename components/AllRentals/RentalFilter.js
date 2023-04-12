@@ -4,7 +4,6 @@ const RentalFilter = ({ states, bedrooms, onUpdateFilter }) => {
   const filterFormSubmitHandler = (e) => {
     e.preventDefault();
 
-    // onUpdateFilter goes here to update state for rentals card in /rentals
     onUpdateFilter({
       bedrooms: e.target.Bedrooms.value,
       location: e.target.Locations.value,
