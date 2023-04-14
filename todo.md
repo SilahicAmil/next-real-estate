@@ -14,6 +14,7 @@
 <!-- -- Implement figma design layout - ((WIP)) -->
 <!-- -- Create 404 Page -->
 <!-- -- Create Landlord Card Component -->
+<!-- -- Implement modified [uid] page from Figma (instead of all the description stuff - small desc and calendar to choose dates to "rent" and then use STRIPE API) -->
 
 <!-- TODO -->
 
@@ -28,7 +29,5 @@
 -- Add Landlord Profile ((hould show the landlord infrormation and their rentals))
 
 -- Add Date Range Picker on rental details page - https://www.npmjs.com/package/react-dates
-
--- Implement modified [uid] page from Figma (instead of all the description stuff - small desc and calendar to choose dates to "rent" and then use STRIPE API)
 
 -- Upload fake images into DB (7-10 pictures)(use https://picsum.photos/ or unsplash) or just store locally
