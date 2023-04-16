@@ -1,6 +1,7 @@
 import Header from "@/components/UI/Header";
 import LandlordCard from "@/components/RentalsDetails/LandlordCard";
 import PhotoCarousel from "@/components/RentalsDetails/PhotoCarousel";
+import RentalDateRange from "@/components/RentalsDetails/RentalDateRange";
 import RentalDescription from "@/components/RentalsDetails/RentalDescription";
 import RentalInformation from "@/components/RentalsDetails/RentalInformation";
 import { supabase } from "@/lib/supabase";
@@ -24,9 +25,9 @@ const RentalsDetailsPage = ({ rental }) => {
         location={rental.state}
         pricing={rental.price}
       />
-      <div className="lg:flex justify-center gap-24 mb-24 mt-12 h-full shadow-inner pt-12">
+      <div className="lg:flex justify-center gap-24 mb-12 mt-12 h-full shadow-inner pt-12">
         <RentalDescription longDescription={rental.longDescription} />
-        <span>Calendar Date Picker Here</span>
+        <RentalDateRange />
       </div>
       <div className="shadow-inner h-32 flex">
         <h1>Location Map or Reviews</h1>
