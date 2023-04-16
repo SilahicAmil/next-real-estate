@@ -1,6 +1,8 @@
 import { loadStripe } from "@stripe/stripe-js";
 import { useEffect } from "react";
 
+// put this all into wherever I end up putting the STRIPE api stuff
+
 // call this on the outside to make sure it doesnt re-render
 const stripePromise = loadStripe(process.env.NEXT_PUBLIC_PUBLISHABLE_KEY);
 
