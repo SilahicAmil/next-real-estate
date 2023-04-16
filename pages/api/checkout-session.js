@@ -7,7 +7,7 @@ export default async function handler(req, res) {
         line_items: [
           {
             // Provide the exact Price ID (for example, pr_1234) of the product you want to sell
-            price: "price_1MxawsL7scDX2PyoitwpC7Mb",
+            price: "price_1MxbDHL7scDX2PyojdiMxwmd",
             quantity: 1,
           },
         ],
