@@ -6,6 +6,7 @@ import { useState } from "react";
 
 const RentalDateRange = ({}) => {
   const [dates, setDates] = useState([new Date(), new Date()]);
+
   return (
     <>
       <div className="lg:h-64 lg:w-1/3 h-32 w-full p-2">

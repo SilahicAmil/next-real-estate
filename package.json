@@ -10,15 +10,17 @@
   },
   "dependencies": {
     "@next/font": "13.2.4",
+    "@stripe/stripe-js": "^1.52.1",
     "@supabase/supabase-js": "^2.14.0",
     "@wojtekmaj/react-daterange-picker": "^5.0.2",
     "eslint": "8.37.0",
     "eslint-config-next": "13.2.4",
-    "next": "13.2.4",
+    "next": "^13.2.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.8.0",
-    "react-responsive-carousel": "^3.2.23"
+    "react-responsive-carousel": "^3.2.23",
+    "stripe": "^12.1.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",
