@@ -1,9 +1,9 @@
 const RentalDescription = ({ longDescription }) => {
   return (
     <>
-      <div className="w-1/3 h-full">
-        <h1 className="text-4xl mb-4">Description</h1>
-        <p className="tracking-wider">{longDescription}</p>
+      <div className="w-1/3">
+        <h1 className="text-2xl mb-4 tracking-wider">Description</h1>
+        <p className="tracking-widest text-md font-sans">{longDescription}</p>
       </div>
     </>
   );
