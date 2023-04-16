@@ -6,7 +6,7 @@ import { VscLocation } from "react-icons/vsc";
 const RentalInformation = ({ sqft, location, pricing }) => {
   return (
     <>
-      <div className="mt-12 mb-12 h-24">
+      <div className="mt-12 mb-12 h-24 ">
         <div className="lg:flex items-center justify-around h-full lg:pt-12 shadow-inner font-merriweather">
           <div className="flex items-center gap-2">
             <AiOutlineHome className="text-3xl text-[#4764C3]" />

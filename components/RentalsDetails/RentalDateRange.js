@@ -8,9 +8,9 @@ const RentalDateRange = ({}) => {
   const [dates, setDates] = useState([new Date(), new Date()]);
   return (
     <>
-      <div className="h-64 w-96">
+      <div className="lg:h-64 lg:w-1/3 h-32 w-full p-2">
         <DateRangePicker
-          className="h-full w-full bg-red-500"
+          className="h-full w-full bg-red-200"
           onChange={setDates}
           value={dates}
         />
