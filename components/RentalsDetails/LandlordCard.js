@@ -26,7 +26,7 @@ const LandlordCard = ({ name, email, phone }) => {
           +1&nbsp;{phone}
         </p>
       </div>
-      <Link href="#" className="mt-4 underline">
+      <Link href={`/landlords/${name}`} className="mt-4 underline">
         View Landlord Profile
       </Link>
     </div>

@@ -25,7 +25,7 @@ const RentalsDetailsPage = ({ rental }) => {
         pricing={rental.price}
       />
       <div className="lg:flex justify-center gap-24 mb-24 mt-12 h-full shadow-inner pt-12">
-        <RentalDescription />
+        <RentalDescription longDescription={rental.longDescription} />
         <span>Calendar Date Picker Here</span>
       </div>
       <div className="shadow-inner h-32 flex">
