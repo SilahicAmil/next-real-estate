@@ -10,7 +10,7 @@ const RentalDateRange = ({}) => {
     <>
       <div className="h-64 w-96">
         <DateRangePicker
-          className="h-full w-full"
+          className="h-full w-full bg-red-500"
           onChange={setDates}
           value={dates}
         />
