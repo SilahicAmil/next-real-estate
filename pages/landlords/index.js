@@ -1,4 +1,4 @@
-const LandlordsPage = () => {
+const LandlordsPage = ({}) => {
   return (
     <>
       <div>
