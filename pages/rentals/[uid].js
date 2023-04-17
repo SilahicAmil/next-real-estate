@@ -4,16 +4,18 @@ import PhotoCarousel from "@/components/RentalsDetails/PhotoCarousel";
 import RentalDateRange from "@/components/RentalsDetails/RentalDateRange";
 import RentalDescription from "@/components/RentalsDetails/RentalDescription";
 import RentalInformation from "@/components/RentalsDetails/RentalInformation";
+import { loadStripe } from "@stripe/stripe-js";
 import { supabase } from "@/lib/supabase";
+import { useRouter } from "next/router";
+
+const stripePromise = loadStripe(process.env.NEXT_PUBLIC_PUBLISHABLE_KEY);
 
 const RentalsDetailsPage = ({ rental }) => {
+  const router = useRouter();
   const submitCheckoutToServerHandler = async (quantity) => {
-    console.log(quantity);
-    // create object of data here
-    console.log(rental.price);
     const productData = {
       name: rental.address,
-      price: rental.price * quantity,
+      price: rental.price,
       description: rental.description,
       amount: quantity,
     };
@@ -21,10 +23,13 @@ const RentalsDetailsPage = ({ rental }) => {
     const response = await fetch("/api/checkout-session", {
       method: "POST",
       body: JSON.stringify(productData),
+      headers: {
+        "Content-Type": "application/json",
+      },
     });
     const result = await response.json();
 
-    console.log(result);
+    router.replace(result.url);
   };
 
   return (

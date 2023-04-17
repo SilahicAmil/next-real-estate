@@ -7,18 +7,11 @@ import { useState } from "react";
 const RentalDateRange = ({ onCheckoutSubmit }) => {
   const [dates, setDates] = useState([new Date(), new Date()]);
 
-  //   Add stripe submit handler here
   const checkoutFormSubmitHandler = (e) => {
     e.preventDefault();
 
-    // quantity will be  the console log below
-    // everything else will be handled in other page
-
     onCheckoutSubmit(Math.floor(Math.abs(dates[0] - dates[1]) / 86400000));
   };
-  //   and all related logic - need to probably useCOntext for this to make it easier
-
-  console.log(Math.floor(Math.abs(dates[0] - dates[1]) / 86400000));
 
   return (
     <>
@@ -29,7 +22,11 @@ const RentalDateRange = ({ onCheckoutSubmit }) => {
           value={dates}
         />
 
-        <button onClick={checkoutFormSubmitHandler}>Checkout</button>
+        <form onSubmit={checkoutFormSubmitHandler}>
+          <section>
+            <button type="submit">Checkout</button>
+          </section>
+        </form>
       </div>
     </>
   );

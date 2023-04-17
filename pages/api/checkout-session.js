@@ -4,17 +4,15 @@ const helper = async (req, res) => {
   if (req.method === "POST") {
     try {
       const { amount, price, name, description } = req.body;
-      const { items } = req.body;
-      console.log(items);
 
       const transformedItem = {
         price_data: {
           currency: "usd",
           product_data: {
-            name,
-            description,
+            name: name,
+            description: description,
           },
-          unit_amount: price * amount,
+          unit_amount: price * 100,
         },
         quantity: amount,
       };
@@ -28,7 +26,7 @@ const helper = async (req, res) => {
         success_url: `${req.headers.origin}/?status=success`,
         cancel_url: `${req.headers.origin}/?status=cancel`,
       });
-      res.redirect(303, session.url);
+      res.status(201).json({ url: session.url });
     } catch (err) {
       res.status(err.statusCode || 500).json(err.message);
     }
