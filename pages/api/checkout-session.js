@@ -1,27 +1,26 @@
 const stripe = require("stripe")(process.env.NEXT_PUBLIC_SECRET_KEY);
 
-export default async function handler(req, res) {
-  //   const { quantity, price, name } = req.body;
-
-  const name = "Rental 1";
-  const description = "Description";
-  const quantity = 2;
-  const price = 500;
-
-  const transformedItem = {
-    price_data: {
-      currency: "usd",
-      product_data: {
-        name: name,
-        description: description,
-      },
-      unit_amount: price * 100,
-    },
-    quantity: quantity,
-  };
-
+const helper = async (req, res) => {
   if (req.method === "POST") {
     try {
+      const { amount, price, name, description } = req.body;
+      const { items } = req.body;
+      console.log(items);
+
+      const transformedItem = {
+        price_data: {
+          currency: "usd",
+          product_data: {
+            name,
+            description,
+          },
+          unit_amount: price * amount,
+        },
+        quantity: amount,
+      };
+
+      console.log(transformedItem);
+
       const session = await stripe.checkout.sessions.create({
         payment_method_types: ["card"],
         line_items: [transformedItem],
@@ -35,6 +34,9 @@ export default async function handler(req, res) {
     }
   } else {
     res.setHeader("Allow", "POST");
+
     res.status(405).end("Method Not Allowed");
   }
-}
+};
+
+export default helper;

@@ -10,12 +10,21 @@ const RentalsDetailsPage = ({ rental }) => {
   const submitCheckoutToServerHandler = async (quantity) => {
     console.log(quantity);
     // create object of data here
-    const object = {
+    console.log(rental.price);
+    const productData = {
       name: rental.address,
       price: rental.price * quantity,
       description: rental.description,
-      quantity,
+      amount: quantity,
     };
+
+    const response = await fetch("/api/checkout-session", {
+      method: "POST",
+      body: JSON.stringify(productData),
+    });
+    const result = await response.json();
+
+    console.log(result);
   };
 
   return (
