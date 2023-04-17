@@ -4,12 +4,18 @@ import "react-calendar/dist/Calendar.css";
 import DateRangePicker from "@wojtekmaj/react-daterange-picker";
 import { useState } from "react";
 
-const RentalDateRange = ({}) => {
+const RentalDateRange = ({ onCheckoutSubmit }) => {
   const [dates, setDates] = useState([new Date(), new Date()]);
 
   //   Add stripe submit handler here
+  const checkoutFormSubmitHandler = (e) => {
+    e.preventDefault();
+
+    // quantity will be  the console log below
+    // everything else will be handled in other page
+    onCheckoutSubmit(Math.floor(Math.abs(dates[0] - dates[1]) / 86400000));
+  };
   //   and all related logic - need to probably useCOntext for this to make it easier
-  //   Below is the logic for how to calculate the days - so just price*days and send to STRIPE API
 
   console.log(Math.floor(Math.abs(dates[0] - dates[1]) / 86400000));
 
@@ -21,7 +27,11 @@ const RentalDateRange = ({}) => {
           onChange={setDates}
           value={dates}
         />
-        <button>Checkout</button>
+        <form onSubmit={checkoutFormSubmitHandler}>
+          <section>
+            <button type="submit">Checkout</button>
+          </section>
+        </form>
       </div>
     </>
   );

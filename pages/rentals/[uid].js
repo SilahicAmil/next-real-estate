@@ -7,6 +7,17 @@ import RentalInformation from "@/components/RentalsDetails/RentalInformation";
 import { supabase } from "@/lib/supabase";
 
 const RentalsDetailsPage = ({ rental }) => {
+  const submitCheckoutToServerHandler = async (quantity) => {
+    console.log(quantity);
+    // create object of data here
+    const object = {
+      name: rental.address,
+      price: rental.price * quantity,
+      description: rental.description,
+      quantity,
+    };
+  };
+
   return (
     <>
       <div className="mt-12 mb-12">
@@ -27,7 +38,7 @@ const RentalsDetailsPage = ({ rental }) => {
       />
       <div className="lg:flex justify-center gap-24 mb-12 mt-12 h-full shadow-inner pt-12">
         <RentalDescription longDescription={rental.longDescription} />
-        <RentalDateRange />
+        <RentalDateRange onCheckoutSubmit={submitCheckoutToServerHandler} />
       </div>
       <div className="shadow-inner h-32 flex">
         <h1>Location Map or Reviews</h1>
