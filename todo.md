@@ -15,16 +15,16 @@
 <!-- -- Implement modified [uid] page from Figma (instead of all the description stuff - small desc and calendar to choose dates to "rent" and then use STRIPE API) -->
 <!-- -- Add Date Range Picker on rental details page - https://github.com/wojtekmaj/react-daterange-picker -->
 <!-- -- Add Stripe API  -->
+<!-- -- Add checkout for stripe from date range picker component or on [uid] page -->
+<!-- -- Figure out how to customize stripe API to have rental property name and price -->
 
 <!-- TODO -->
 
 -- https://supabase.com/docs/reference/javascript/filter - check this out for filtering data directly in supabase (API) instead of client side
 
--- Add checkout for stripe from date range picker component or on [uid] page
+-- Confirmation email and text should be sent after checkout ((not sure how to do this yet))
 
--- Confirmation email and text should be sent after checkout
-
--- Figure out how to customize stripe API to have rental property name and price
+-- Add Testing ((Very crucial for the STRIPE checkout stuff))
 
 -- Add Styling for Date Range Picker
 
