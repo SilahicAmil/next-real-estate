@@ -7,10 +7,15 @@ import { useState } from "react";
 const RentalDateRange = ({ onCheckoutSubmit }) => {
   const [dates, setDates] = useState([new Date(), new Date()]);
 
+  const calcDates = Math.floor(Math.abs(dates[0] - dates[1]) / 86400000);
+
   const checkoutFormSubmitHandler = (e) => {
     e.preventDefault();
+    let quantity = 0;
+    // might change this to a if else statement to make it more readable
+    calcDates === 0 ? (quantity = 1) : (quantity = calcDates);
 
-    onCheckoutSubmit(Math.floor(Math.abs(dates[0] - dates[1]) / 86400000));
+    onCheckoutSubmit(quantity);
   };
 
   return (
