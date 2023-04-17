@@ -28,6 +28,10 @@
 
 -- Add Styling for Date Range Picker
 
+-- Add Error Handling
+
+-- Add Toast Notif for checkout ((wait 2-3 seconds before redirect type beat))
+
 -- Figure out how to handle if a route is unavailable like "/rentals/notValid" ((probably just create a custom 500 page or something))
 
 -- Create Custom 404 Page
