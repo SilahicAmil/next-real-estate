@@ -30,6 +30,10 @@
 
 -- Add Error Handling
 
+-- Refactor /rentals page to have a map on the right side and list of rentals on the other side ((realtor.com look kinda of))
+
+-- Mapbox or Google Maps for above since we have lat and long in DB
+
 -- Add Toast Notif for checkout ((wait 2-3 seconds before redirect type beat))
 
 -- Figure out how to handle if a route is unavailable like "/rentals/notValid" ((probably just create a custom 500 page or something))
