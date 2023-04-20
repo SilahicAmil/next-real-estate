@@ -75,7 +75,12 @@ const AllRentalsPage = ({ rentals }) => {
     });
 
     new mapboxgl.Marker()
-      .setLngLat([rentals[0].longitude, rentals[0].latitude])
+      .setLngLat([rentals[2].longitude, rentals[2].latitude])
+      .setPopup(
+        new mapboxgl.Popup({ offset: 25 }).setHTML(
+          `<p>${rentals[2].address}</p>`
+        )
+      )
       .addTo(map);
   }, [rentals]);
 
