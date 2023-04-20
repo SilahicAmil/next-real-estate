@@ -74,8 +74,10 @@ const AllRentalsPage = ({ rentals }) => {
       map.resize();
     });
 
-    new mapboxgl.Marker().setLngLat([-90.791303, 40.267571]).addTo(map);
-  }, []);
+    new mapboxgl.Marker()
+      .setLngLat([rentals[0].longitude, rentals[0].latitude])
+      .addTo(map);
+  }, [rentals]);
 
   return (
     <>
