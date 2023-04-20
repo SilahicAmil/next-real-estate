@@ -1,19 +1,13 @@
-import "mapbox-gl/dist/mapbox-gl.css";
-
 import { useEffect, useRef, useState } from "react";
 
 import Header from "@/components/UI/Header";
+import Map from "@/components/AllRentals/Map";
 import RentalFilter from "@/components/AllRentals/RentalFilter";
 import RentalsCard from "@/components/AllRentals/RentalsCard";
-import mapboxgl from "mapbox-gl";
 import { supabase } from "@/lib/supabase";
-
-mapboxgl.accessToken = process.env.NEXT_PUBLIC_MAPBOX_GL_ACCESS_TOKEN;
 
 const AllRentalsPage = ({ rentals }) => {
   const [rentalsData, setRentalsData] = useState(rentals);
-  const [mapInstance, setMapInstance] = useState(null);
-  const mapContainer = useRef();
 
   const removedDuplicateBedrooms = rentals.filter(
     // self is the array of the current element that is being filtered
@@ -60,30 +54,6 @@ const AllRentalsPage = ({ rentals }) => {
     setRentalsData(filteredRentals);
   };
 
-  useEffect(() => {
-    const map = new mapboxgl.Map({
-      container: mapContainer.current,
-      style: "mapbox://styles/mapbox/streets-v12",
-      center: [-90.791303, 40.267571],
-      zoom: 4,
-    });
-
-    map.on("load", () => {
-      setMapInstance(map);
-
-      map.resize();
-    });
-
-    new mapboxgl.Marker()
-      .setLngLat([rentals[2].longitude, rentals[2].latitude])
-      .setPopup(
-        new mapboxgl.Popup({ offset: 25 }).setHTML(
-          `<p>${rentals[2].address}</p>`
-        )
-      )
-      .addTo(map);
-  }, [rentals]);
-
   return (
     <>
       <div className="mb-12 mt-12">
@@ -96,9 +66,8 @@ const AllRentalsPage = ({ rentals }) => {
           bedrooms={sortedBedrooms}
           onUpdateFilter={filterUpdateHandler}
         />
-        {/*  */}
-        <div className="h-96 w-full" ref={mapContainer}></div>
-        {/*  */}
+
+        <Map rentals={rentals} />
         <div className="grid lg:grid-cols-4 md:grid-cols-3 lsm:grid-cols-2 sm:grid-cols-1 xs:grid-cols-1 gap-12 m-12 mb-24 mt-12">
           {rentalsData.map((rental) => {
             return (
