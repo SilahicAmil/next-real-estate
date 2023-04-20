@@ -17,8 +17,11 @@
 <!-- -- Add Stripe API  -->
 <!-- -- Add checkout for stripe from date range picker component or on [uid] page -->
 <!-- -- Figure out how to customize stripe API to have rental property name and price -->
+<!-- -- Mapbox or Google Maps for above since we have lat and long in DB -->
 
 <!-- TODO -->
+
+-- Redo styling for /rentals to have map of right and cards on left or vice versa ((PRIORITY #1))
 
 -- https://supabase.com/docs/reference/javascript/filter - check this out for filtering data directly in supabase (API) instead of client side
 
@@ -30,11 +33,7 @@
 
 -- Add Error Handling
 
--- Look at using Jotai for state across the app
-
--- Refactor /rentals page to have a map on the right side and list of rentals on the other side ((realtor.com look kinda of))
-
--- Mapbox or Google Maps for above since we have lat and long in DB
+-- Look at using Jotai for state across the app ((if needed))
 
 -- Add Toast Notif for checkout ((wait 2-3 seconds before redirect type beat))
 
