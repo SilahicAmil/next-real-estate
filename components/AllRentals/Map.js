@@ -16,6 +16,7 @@ const Map = () => {
       style: "mapbox://styles/silahicamil/clgr20kdu000601r56tp22g9w",
       center: [-90.791303, 40.267571],
       zoom: 4,
+      cooperativeGestures: true,
     });
 
     map.on("load", () => {
@@ -43,6 +44,8 @@ const Map = () => {
         )
         .addTo(map);
     });
+
+    map.addControl(new mapboxgl.NavigationControl());
   }, []);
 
   return (
