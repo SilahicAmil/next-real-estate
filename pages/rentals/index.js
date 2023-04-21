@@ -1,10 +1,9 @@
-import { useEffect, useRef, useState } from "react";
-
 import Header from "@/components/UI/Header";
 import Map from "@/components/AllRentals/Map";
 import RentalFilter from "@/components/AllRentals/RentalFilter";
 import RentalsCard from "@/components/AllRentals/RentalsCard";
 import { supabase } from "@/lib/supabase";
+import { useState } from "react";
 
 const AllRentalsPage = ({ rentals }) => {
   const [rentalsData, setRentalsData] = useState(rentals);
@@ -66,9 +65,9 @@ const AllRentalsPage = ({ rentals }) => {
           bedrooms={sortedBedrooms}
           onUpdateFilter={filterUpdateHandler}
         />
-        <div className="lg:w-full lg:flex ">
-          <Map rentals={rentals} />
-          <div className="grid lg:grid-cols-4 md:grid-cols-3 lsm:grid-cols-2 sm:grid-cols-1 xs:grid-cols-1 gap-2  mb-24 mt-12 lg:w-full mr-2">
+        <div className="lg:w-full lg:flex">
+          <Map />
+          <div className="grid lg:grid-cols-3 md:grid-cols-2 lsm:grid-cols-2 sm:grid-cols-1 xs:grid-cols-1 gap-2  mb-24 mt-12 lg:w-full m-4">
             {rentalsData.map((rental) => {
               return (
                 <RentalsCard

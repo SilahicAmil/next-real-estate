@@ -30,12 +30,11 @@ const Map = () => {
         layers: ["real-estate"],
       });
 
-      if (!features.length) {
+      if (features.length === 0) {
         return;
       }
 
       const feature = features[0];
-      console.log(feature);
 
       new mapboxgl.Popup({ offset: [0, -15] })
         .setLngLat(feature.geometry.coordinates)
@@ -51,9 +50,9 @@ const Map = () => {
   return (
     <>
       <div
-        className="lg:h-[100vh] w-full rounded-lg mt-12 m-4"
+        className="h-[100vh] lg:h-[100vh] lg:w-full rounded-lg mt-12 m-4"
         ref={mapContainer}
-      ></div>
+      />
     </>
   );
 };
