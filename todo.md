@@ -18,12 +18,13 @@
 <!-- -- Add checkout for stripe from date range picker component or on [uid] page -->
 <!-- -- Figure out how to customize stripe API to have rental property name and price -->
 <!-- -- Mapbox or Google Maps for above since we have lat and long in DB -->
+<!-- -- Redo styling for /rentals to have map of right and cards on left or vice versa ((PRIORITY #1)) -->
 
 <!-- TODO -->
 
--- Redo styling for /rentals to have map of right and cards on left or vice versa ((PRIORITY #1))
-
 -- https://supabase.com/docs/reference/javascript/filter - check this out for filtering data directly in supabase (API) instead of client side
+
+-- Add WebGL error handling
 
 -- Confirmation email and text should be sent after checkout ((not sure how to do this yet))
 
