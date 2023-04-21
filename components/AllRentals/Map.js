@@ -5,6 +5,7 @@ import { useEffect, useRef, useState } from "react";
 import mapboxgl from "!mapbox-gl";
 
 mapboxgl.accessToken = process.env.NEXT_PUBLIC_MAPBOX_GL_ACCESS_TOKEN;
+
 const Map = ({ rentals }) => {
   const [mapInstance, setMapInstance] = useState(null);
   const mapContainer = useRef();
@@ -27,7 +28,8 @@ const Map = ({ rentals }) => {
       .setLngLat([rentals[2].longitude, rentals[2].latitude])
       .setPopup(
         new mapboxgl.Popup({ offset: 25 }).setHTML(
-          `<h3>${rentals[2].address}</h3>`
+          `   <h3>${rentals[2].address}</h3>
+      <a href="/rentals/${rentals[2].uid}">View Property</a>`
         )
       )
       .addTo(map);
