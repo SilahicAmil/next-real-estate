@@ -27,7 +27,7 @@ const Map = ({ rentals }) => {
       .setLngLat([rentals[2].longitude, rentals[2].latitude])
       .setPopup(
         new mapboxgl.Popup({ offset: 25 }).setHTML(
-          `<p>${rentals[2].address}</p>`
+          `<h3>${rentals[2].address}</h3>`
         )
       )
       .addTo(map);
@@ -35,7 +35,10 @@ const Map = ({ rentals }) => {
 
   return (
     <>
-      <div className="h-96 w-full" ref={mapContainer}></div>
+      <div
+        className="lg:h-[100vh] w-full rounded-lg mt-12 m-4"
+        ref={mapContainer}
+      ></div>
     </>
   );
 };

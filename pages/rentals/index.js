@@ -66,20 +66,21 @@ const AllRentalsPage = ({ rentals }) => {
           bedrooms={sortedBedrooms}
           onUpdateFilter={filterUpdateHandler}
         />
-
-        <Map rentals={rentals} />
-        <div className="grid lg:grid-cols-4 md:grid-cols-3 lsm:grid-cols-2 sm:grid-cols-1 xs:grid-cols-1 gap-12 m-12 mb-24 mt-12">
-          {rentalsData.map((rental) => {
-            return (
-              <RentalsCard
-                key={rental.uid}
-                description={rental.description}
-                address={rental.address}
-                uid={rental.uid}
-                price={rental.price}
-              />
-            );
-          })}
+        <div className="lg:w-full lg:flex ">
+          <Map rentals={rentals} />
+          <div className="grid lg:grid-cols-4 md:grid-cols-3 lsm:grid-cols-2 sm:grid-cols-1 xs:grid-cols-1 gap-2  mb-24 mt-12 lg:w-full mr-2">
+            {rentalsData.map((rental) => {
+              return (
+                <RentalsCard
+                  key={rental.uid}
+                  description={rental.description}
+                  address={rental.address}
+                  uid={rental.uid}
+                  price={rental.price}
+                />
+              );
+            })}
+          </div>
         </div>
       </div>
     </>

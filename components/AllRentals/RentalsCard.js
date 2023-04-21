@@ -4,7 +4,7 @@ import Link from "next/link";
 const RentalsCard = ({ description, address, uid, price }) => {
   return (
     <>
-      <div className="max-w-sm rounded-lg shadow-xl ">
+      <div className="max-w-sm rounded-lg shadow-xl h-full">
         <Image
           className="w-full h-64 rounded-t-lg object-cover"
           src="/images/workplace.jpeg"
