@@ -65,9 +65,10 @@ const AllRentalsPage = ({ rentals }) => {
           bedrooms={sortedBedrooms}
           onUpdateFilter={filterUpdateHandler}
         />
-        <div className="lg:w-full lg:flex">
+        <div className="lg:w-full lg:flex ">
           <Map />
           <div className="grid lg:grid-cols-3 md:grid-cols-2 lsm:grid-cols-2 sm:grid-cols-1 xs:grid-cols-1 gap-2  mb-24 mt-12 lg:w-full m-4">
+            {/* pagination needed for this */}
             {rentalsData.map((rental) => {
               return (
                 <RentalsCard
