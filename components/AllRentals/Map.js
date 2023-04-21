@@ -6,14 +6,14 @@ import mapboxgl from "!mapbox-gl";
 
 mapboxgl.accessToken = process.env.NEXT_PUBLIC_MAPBOX_GL_ACCESS_TOKEN;
 
-const Map = ({ rentals }) => {
+const Map = () => {
   const [mapInstance, setMapInstance] = useState(null);
   const mapContainer = useRef();
 
   useEffect(() => {
     const map = new mapboxgl.Map({
       container: mapContainer.current,
-      style: "mapbox://styles/mapbox/streets-v12",
+      style: "mapbox://styles/silahicamil/clgr20kdu000601r56tp22g9w",
       center: [-90.791303, 40.267571],
       zoom: 4,
     });
@@ -24,16 +24,26 @@ const Map = ({ rentals }) => {
       map.resize();
     });
 
-    new mapboxgl.Marker()
-      .setLngLat([rentals[2].longitude, rentals[2].latitude])
-      .setPopup(
-        new mapboxgl.Popup({ offset: 25 }).setHTML(
-          `   <h3>${rentals[2].address}</h3>
-      <a href="/rentals/${rentals[2].uid}">View Property</a>`
+    map.on("click", (event) => {
+      const features = map.queryRenderedFeatures(event.point, {
+        layers: ["real-estate"],
+      });
+
+      if (!features.length) {
+        return;
+      }
+
+      const feature = features[0];
+      console.log(feature);
+
+      new mapboxgl.Popup({ offset: [0, -15] })
+        .setLngLat(feature.geometry.coordinates)
+        .setHTML(
+          `<h3>${feature.properties.address}</h3><a href="rentals/${feature.properties.uid}" rel="noreferrer" target="_blank">View Property</a>`
         )
-      )
-      .addTo(map);
-  }, [rentals]);
+        .addTo(map);
+    });
+  }, []);
 
   return (
     <>
