@@ -19,6 +19,7 @@
 <!-- -- Figure out how to customize stripe API to have rental property name and price -->
 <!-- -- Mapbox or Google Maps for above since we have lat and long in DB -->
 <!-- -- Redo styling for /rentals to have map of right and cards on left or vice versa ((PRIORITY #1)) -->
+<!-- -- Add Styling for Date Range Picker -->
 
 <!-- TODO -->
 
@@ -30,11 +31,13 @@
 
 -- Add Testing ((Very crucial for the STRIPE checkout stuff))
 
--- Add Styling for Date Range Picker
-
 -- Add Error Handling
 
--- Look at using Jotai for state across the app ((if needed))
+-- Add ?status=cancel for stripe route handling
+
+-- Add NextAuth for Easier Checkout Tracking and Storage
+
+-- Use Jotai?? ((maybe))
 
 -- Add Toast Notif for checkout ((wait 2-3 seconds before redirect type beat))
 
