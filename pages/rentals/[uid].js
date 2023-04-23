@@ -56,7 +56,7 @@ const RentalsDetailsPage = ({ rental }) => {
         <RentalDateRange onCheckoutSubmit={submitCheckoutToServerHandler} />
       </div>
       <div className="mt-12 mb-12 shadow-inner">
-        <h1>Locations and Reviews</h1>
+        <h1 className="pt-12">Locations and Reviews</h1>
       </div>
     </>
   );
