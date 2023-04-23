@@ -29,7 +29,7 @@ const RentalDateRange = ({ onCheckoutSubmit }) => {
 
         <button
           onClick={checkoutFormSubmitHandler}
-          className="w-full mt-2 bg-red-500 p-4 flex items-center justify-center rounded-md hover:rounded-xl hover:duration-200"
+          className="w-full mt-2 p-4 flex items-center justify-center rounded-md hover:rounded-xl hover:duration-200 text-white bg-[#1C3988]"
         >
           Checkout
         </button>
