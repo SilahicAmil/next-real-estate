@@ -1,7 +1,7 @@
 import Header from "@/components/UI/Header";
-import Map from "@/components/AllRentals/Map";
 import RentalFilter from "@/components/AllRentals/RentalFilter";
 import RentalsCard from "@/components/AllRentals/RentalsCard";
+import RentalsMap from "@/components/AllRentals/RentalsMap";
 import { supabase } from "@/lib/supabase";
 import { useState } from "react";
 
@@ -65,8 +65,8 @@ const AllRentalsPage = ({ rentals }) => {
           bedrooms={sortedBedrooms}
           onUpdateFilter={filterUpdateHandler}
         />
-        <div className="lg:w-full lg:flex ">
-          <Map />
+        <div className="lg:w-full lg:flex shadow-inner">
+          <RentalsMap />
           <div className="grid lg:grid-cols-3 md:grid-cols-2 lsm:grid-cols-2 sm:grid-cols-1 xs:grid-cols-1 gap-2  mb-24 mt-12 lg:w-full m-4">
             {/* pagination needed for this */}
             {rentalsData.map((rental) => {

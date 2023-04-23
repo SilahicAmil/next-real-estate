@@ -6,7 +6,7 @@ import mapboxgl from "!mapbox-gl";
 
 mapboxgl.accessToken = process.env.NEXT_PUBLIC_MAPBOX_GL_ACCESS_TOKEN;
 
-const Map = () => {
+const RentalsMap = () => {
   const [mapInstance, setMapInstance] = useState(null);
   const mapContainer = useRef();
 
@@ -50,11 +50,11 @@ const Map = () => {
   return (
     <>
       <div
-        className="h-[100vh] lg:h-[100vh] lg:w-full rounded-lg mt-12 m-4"
+        className="h-[100vh] lg:h-[100vh] lg:w-full rounded-lg mt-12 m-4 "
         ref={mapContainer}
       />
     </>
   );
 };
 
-export default Map;
+export default RentalsMap;
