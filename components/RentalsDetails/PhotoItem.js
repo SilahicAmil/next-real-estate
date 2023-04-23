@@ -1,14 +1,9 @@
 import Image from "next/image";
-const PhotoItem = ({ imageName }) => {
+const PhotoItem = ({ imagePath, imageName }) => {
   return (
     <>
       <div>
-        <Image
-          alt="123"
-          src="/images/test-photo.jpeg"
-          width={400}
-          height={400}
-        />
+        <Image alt={imageName} src={imagePath} width={400} height={400} />
       </div>
     </>
   );

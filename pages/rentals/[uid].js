@@ -1,5 +1,6 @@
 import Header from "@/components/UI/Header";
 import LandlordCard from "@/components/RentalsDetails/LandlordCard";
+import { PHOTO_DATA } from "@/data/photo-data";
 import PhotoCarousel from "@/components/RentalsDetails/PhotoCarousel";
 import RentalDateRange from "@/components/RentalsDetails/RentalDateRange";
 import RentalDescription from "@/components/RentalsDetails/RentalDescription";
@@ -38,7 +39,7 @@ const RentalsDetailsPage = ({ rental }) => {
         <Header subtext={rental.description} title={rental.address} />
       </div>
       <div className="lg:flex justify-center gap-24 mb-12 mt-12 h-full shadow-inner pt-12">
-        <PhotoCarousel />
+        <PhotoCarousel imageData={PHOTO_DATA} />
         <LandlordCard
           name={rental.landlord_name}
           email={rental.landlord_email}

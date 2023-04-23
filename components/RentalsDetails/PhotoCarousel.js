@@ -9,10 +9,15 @@ const PhotoCarousel = ({ imageData }) => {
       <div className="lg:w-1/2">
         <Carousel showArrows={true} showThumbs={false}>
           {/* Map Over PhotoItem Eventually */}
-          <PhotoItem />
-          <PhotoItem />
-          <PhotoItem />
-          <PhotoItem />
+          {imageData.map((photo) => {
+            return (
+              <PhotoItem
+                key={photo.id}
+                imageName={photo.imageName}
+                imagePath={photo.imagePath}
+              />
+            );
+          })}
         </Carousel>
       </div>
     </>
