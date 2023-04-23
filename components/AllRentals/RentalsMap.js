@@ -2,7 +2,7 @@ import "mapbox-gl/dist/mapbox-gl.css";
 
 import { useEffect, useRef, useState } from "react";
 
-import mapboxgl from "!mapbox-gl";
+import mapboxgl from "mapbox-gl";
 
 mapboxgl.accessToken = process.env.NEXT_PUBLIC_MAPBOX_GL_ACCESS_TOKEN;
 
@@ -13,7 +13,7 @@ const RentalsMap = () => {
   useEffect(() => {
     const map = new mapboxgl.Map({
       container: mapContainer.current,
-      style: "mapbox://styles/silahicamil/clgr20kdu000601r56tp22g9w",
+      style: "mapbox://styles/silahicamil/clgtthvmm001f01r59rzjakcq",
       center: [-90.791303, 40.267571],
       zoom: 4,
       cooperativeGestures: true,
@@ -27,10 +27,10 @@ const RentalsMap = () => {
 
     map.on("click", (event) => {
       const features = map.queryRenderedFeatures(event.point, {
-        layers: ["real-estate"],
+        layers: ["updated-real-estate"],
       });
 
-      if (features.length === 0) {
+      if (!features.length) {
         return;
       }
 
