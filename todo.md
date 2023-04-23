@@ -23,7 +23,7 @@
 
 <!-- TODO -->
 
--- https://supabase.com/docs/reference/javascript/filter - check this out for filtering data directly in supabase (API) instead of client side
+-- https://supabase.com/docs/reference/javascript/filter - check this out for filtering data directly in supabase (API router filtering)
 
 -- Add WebGL error handling
 
