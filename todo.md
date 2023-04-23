@@ -39,7 +39,7 @@
 
 -- Use Jotai?? ((maybe))
 
--- Add Toast Notif for checkout ((wait 2-3 seconds before redirect type beat))
+-- Add Toast Notif for checkout ((wait 2-3 seconds before redirect))
 
 -- Figure out how to handle if a route is unavailable like "/rentals/notValid" ((probably just create a custom 500 page or something))
 
@@ -47,4 +47,4 @@
 
 -- Add Landlord Profile ((should show the landlord information and their rentals))((Similiar to UtahRealEstate.com))
 
--- Upload fake images into DB (7-10 pictures)(use https://picsum.photos/ or unsplash) or just store locally
+-- Upload fake images into DB (4-8 pictures)(use https://picsum.photos/ or unsplash) or just store locally
