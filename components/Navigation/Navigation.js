@@ -53,7 +53,7 @@ const Navigation = ({}) => {
               <div className="hidden md:flex sm:items-center">
                 <Link
                   href="/contact"
-                  className="text-white bg-[#1C3988] text-sm font-semibold border px-4 py-2 rounded-sm hover:rounded-xl hover:duration-200"
+                  className="text-white bg-[#1C3988] text-sm font-semibold border px-4 py-2 rounded-md hover:rounded-xl hover:duration-200"
                 >
                   Contact Us
                 </Link>

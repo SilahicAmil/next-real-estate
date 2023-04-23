@@ -20,18 +20,19 @@ const RentalDateRange = ({ onCheckoutSubmit }) => {
 
   return (
     <>
-      <div className="lg:h-64 lg:w-1/3 h-32 w-full p-2">
+      <div className="lg:h-64 lg:w-1/3 h-32 w-full p-2 gap-12 ">
         <DateRangePicker
-          className="h-full w-full bg-red-200"
+          className="h-full w-full rounded-md"
           onChange={setDates}
           value={dates}
         />
 
-        <form onSubmit={checkoutFormSubmitHandler}>
-          <section>
-            <button type="submit">Checkout</button>
-          </section>
-        </form>
+        <button
+          onClick={checkoutFormSubmitHandler}
+          className="w-full mt-2 bg-red-500 p-4 flex items-center justify-center rounded-md hover:rounded-xl hover:duration-200"
+        >
+          Checkout
+        </button>
       </div>
     </>
   );

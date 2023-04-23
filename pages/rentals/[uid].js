@@ -50,12 +50,12 @@ const RentalsDetailsPage = ({ rental }) => {
         location={rental.state}
         pricing={rental.price}
       />
-      <div className="lg:flex justify-center gap-24 mb-12 mt-12 h-full shadow-inner pt-12">
+      <div className="lg:flex justify-around h-full shadow-inner pt-12 pb-12">
         <RentalDescription longDescription={rental.longDescription} />
         <RentalDateRange onCheckoutSubmit={submitCheckoutToServerHandler} />
       </div>
-      <div className="shadow-inner h-32 flex">
-        <h1>Location Map or Reviews</h1>
+      <div className="mt-12 mb-12 shadow-inner">
+        <h1>Locations and Reviews</h1>
       </div>
     </>
   );
