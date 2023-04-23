@@ -45,6 +45,6 @@
 
 -- Create Custom 404 Page
 
--- Add Landlord Profile ((hould show the landlord infrormation and their rentals))
+-- Add Landlord Profile ((should show the landlord information and their rentals))((Similiar to UtahRealEstate.com))
 
 -- Upload fake images into DB (7-10 pictures)(use https://picsum.photos/ or unsplash) or just store locally
