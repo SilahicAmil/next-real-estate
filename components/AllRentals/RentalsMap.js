@@ -13,7 +13,7 @@ const RentalsMap = () => {
   useEffect(() => {
     const map = new mapboxgl.Map({
       container: mapContainer.current,
-      style: "mapbox://styles/silahicamil/clgtthvmm001f01r59rzjakcq",
+      style: process.env.NEXT_PUBLIC_MAP_STYLE,
       center: [-90.791303, 40.267571],
       zoom: 4,
       cooperativeGestures: true,
