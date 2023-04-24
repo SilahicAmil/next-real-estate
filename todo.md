@@ -45,6 +45,8 @@
 
 -- Create Custom 404 Page
 
+-- Add Head Metadata for SEO
+
 -- Add Landlord Profile ((should show the landlord information and their rentals))((Similiar to UtahRealEstate.com))
 
 -- Upload fake images into DB (4-8 pictures)(use https://picsum.photos/ or unsplash) or just store locally
