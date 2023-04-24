@@ -37,7 +37,7 @@
 
 -- Add NextAuth for Easier Checkout Tracking and Storage
 
--- Use Jotai?? ((maybe))
+-- Use Jotai to replace useState
 
 -- Add Toast Notif for checkout ((wait 2-3 seconds before redirect))
 
