@@ -2,7 +2,7 @@ import "mapbox-gl/dist/mapbox-gl.css";
 
 import { useEffect, useRef, useState } from "react";
 
-import mapboxgl from "mapbox-gl";
+import mapboxgl from "!mapbox-gl";
 
 mapboxgl.accessToken = process.env.NEXT_PUBLIC_MAPBOX_GL_ACCESS_TOKEN;
 
@@ -15,7 +15,7 @@ const RentalsMap = () => {
       container: mapContainer.current,
       style: process.env.NEXT_PUBLIC_MAP_STYLE,
       center: [-90.791303, 40.267571],
-      zoom: 4,
+      // zoom: 4,
       cooperativeGestures: true,
     });
 

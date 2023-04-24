@@ -19,7 +19,7 @@ const RentalFilter = ({ states, bedrooms, onUpdateFilter }) => {
             className="flex flex-col gap-12 h-full mb-12 mt-12 justify-center"
             onSubmit={filterFormSubmitHandler}
           >
-            <h1 className="flex items-center justify-center text-sm text-gray-500 tracking-wider">
+            <h1 className="flex items-center justify-center text-sm text-black tracking-wider">
               Filter Settings
             </h1>
             <div className="w-full bg-white border" />

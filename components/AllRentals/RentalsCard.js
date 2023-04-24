@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Merriweather } from "next/font/google";
+const merriweather = Merriweather({ weight: "300", subsets: ["latin"] });
 
 const RentalsCard = ({ description, address, uid, price }) => {
   return (
@@ -16,7 +18,7 @@ const RentalsCard = ({ description, address, uid, price }) => {
           <div className="font-bold text-xl mb-2">
             <Link
               href={`/rentals/${uid}`}
-              className="underline font-merriweather"
+              className={`underline ${merriweather.className}`}
             >
               {address}
             </Link>
