@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Header from "@/components/UI/Header";
 import LandlordCard from "@/components/RentalsDetails/LandlordCard";
 import { PHOTO_DATA } from "@/data/photo-data";
@@ -35,6 +36,14 @@ const RentalsDetailsPage = ({ rental }) => {
 
   return (
     <>
+      <Head>
+        <title>Real Estate - {rental.address}</title>
+        <meta
+          property="og:title"
+          content={`${rental.longDescription}`}
+          key="title"
+        />
+      </Head>
       <div className="mt-12 mb-12">
         <Header subtext={rental.description} title={rental.address} />
       </div>

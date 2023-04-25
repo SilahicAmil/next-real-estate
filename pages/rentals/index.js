@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Header from "@/components/UI/Header";
 import RentalFilter from "@/components/AllRentals/RentalFilter";
 import RentalsCard from "@/components/AllRentals/RentalsCard";
@@ -55,6 +56,14 @@ const AllRentalsPage = ({ rentals }) => {
 
   return (
     <>
+      <Head>
+        <title>Real Estate - Rentals</title>
+        <meta
+          property="og:title"
+          content="View all 100+ rentals we offer. Filter to the exact needs you have, to best enjoy your next rental. Over 50+ new rentals added each day!"
+          key="title"
+        />
+      </Head>
       <div className="mb-12 mt-12">
         <Header
           subtext="Choose from the most advantageous offers"
