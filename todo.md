@@ -36,11 +36,11 @@
 
 -- Add ?status=cancel for stripe route handling
 
--- Add NextAuth for Easier Checkout Tracking and Storage
+-- Figure out how to store checkout data
 
 -- Use Jotai to replace useState
 
--- Add Toast Notif for checkout ((wait 2-3 seconds before redirect))
+-- Add Toast Notif for checkout ((wait 2-3 seconds before redirect))((setTimeout))
 
 -- Figure out how to handle if a route is unavailable like "/rentals/notValid" ((probably just create a custom 500 page or something))
 
