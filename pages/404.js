@@ -9,9 +9,14 @@ const ErrorPage = ({}) => {
       <Head>
         <title>Real Esate - 404</title>
       </Head>
-      <div>
-        <h1>404 Page</h1>
-        <button onClick={() => router.back()}>Go Back</button>
+      <div className="flex flex-col items-center justify-center h-[100vh] bg-red-300">
+        <h1 className="text-4xl">404 Page</h1>
+        <button
+          onClick={() => router.back()}
+          className="text-4xl bg-red-500 p-4"
+        >
+          Go Back
+        </button>
       </div>
     </>
   );

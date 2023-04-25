@@ -20,6 +20,7 @@
 <!-- -- Mapbox or Google Maps for above since we have lat and long in DB -->
 <!-- -- Redo styling for /rentals to have map of right and cards on left or vice versa ((PRIORITY #1)) -->
 <!-- -- Add Styling for Date Range Picker -->
+<!-- -- Add Head Metadata for SEO -->
 
 <!-- TODO -->
 
@@ -44,8 +45,6 @@
 -- Figure out how to handle if a route is unavailable like "/rentals/notValid" ((probably just create a custom 500 page or something))
 
 -- Create Custom 404 Page
-
--- Add Head Metadata for SEO
 
 -- Add Landlord Profile ((should show the landlord information and their rentals))((Similiar to UtahRealEstate.com))
 
