@@ -26,8 +26,6 @@
 
 -- https://supabase.com/docs/reference/javascript/filter - check this out for filtering data directly in supabase (API router filtering)
 
--- Add WebGL error handling
-
 -- Confirmation email and text should be sent after checkout ((not sure how to do this yet))
 
 -- Add Testing ((Very crucial for the STRIPE checkout stuff))
