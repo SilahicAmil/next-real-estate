@@ -32,6 +32,8 @@
 
 -- Add Error Handling
 
+-- Add Data Caching
+
 -- Add ?status=cancel for stripe route handling
 
 -- Figure out how to store checkout data
