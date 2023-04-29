@@ -21,6 +21,8 @@
 <!-- -- Redo styling for /rentals to have map of right and cards on left or vice versa ((PRIORITY #1)) -->
 <!-- -- Add Styling for Date Range Picker -->
 <!-- -- Add Head Metadata for SEO -->
+<!-- -- Add WebGL Error Handling -->
+<!-- -- Update Stripe API Handling -->
 
 <!-- TODO -->
 
