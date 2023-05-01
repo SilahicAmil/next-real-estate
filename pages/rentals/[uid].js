@@ -35,9 +35,13 @@ const RentalsDetailsPage = ({ rental }) => {
     });
     const result = await response.json();
 
-    setToastText(toast.success("Checking out..."));
+    if (result) {
+      setToastText(toast.success("Checking out..."));
+    } else {
+      setToastText(toast.error("Unable To Checkout. Try Again!"));
+    }
 
-    const checkoutTimer = setTimeout(function () {
+    setTimeout(function () {
       router.replace(result.url);
     }, 2100);
   };

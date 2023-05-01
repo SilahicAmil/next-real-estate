@@ -23,6 +23,7 @@
 <!-- -- Add Head Metadata for SEO -->
 <!-- -- Add WebGL Error Handling -->
 <!-- -- Update Stripe API Handling -->
+<!-- -- Add Checkout Toast -->
 
 <!-- TODO -->
 
