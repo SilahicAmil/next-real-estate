@@ -11,12 +11,10 @@ import RentalInformation from "@/components/RentalsDetails/RentalInformation";
 import { loadStripe } from "@stripe/stripe-js";
 import { supabase } from "@/lib/supabase";
 import { useRouter } from "next/router";
-import { useState } from "react";
 
 const stripePromise = loadStripe(process.env.NEXT_PUBLIC_PUBLISHABLE_KEY);
 
 const RentalsDetailsPage = ({ rental }) => {
-  const [toastText, setToastText] = useState(toast);
   const router = useRouter();
   const submitCheckoutToServerHandler = async (quantity) => {
     const productData = {
@@ -35,15 +33,14 @@ const RentalsDetailsPage = ({ rental }) => {
     });
     const result = await response.json();
 
-    if (result) {
-      setToastText(toast.success("Checking out..."));
-    } else {
-      setToastText(toast.error("Unable To Checkout. Try Again!"));
-    }
-
     setTimeout(function () {
       router.replace(result.url);
     }, 2100);
+
+    if (!result) {
+      toast.error("Unable To Checkout. Try Again!");
+    }
+    return toast.success("Checking out...");
   };
 
   return (
