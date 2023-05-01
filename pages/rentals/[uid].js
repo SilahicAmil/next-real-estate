@@ -1,3 +1,5 @@
+import toast, { Toaster } from "react-hot-toast";
+
 import Head from "next/head";
 import Header from "@/components/UI/Header";
 import LandlordCard from "@/components/RentalsDetails/LandlordCard";
@@ -9,10 +11,12 @@ import RentalInformation from "@/components/RentalsDetails/RentalInformation";
 import { loadStripe } from "@stripe/stripe-js";
 import { supabase } from "@/lib/supabase";
 import { useRouter } from "next/router";
+import { useState } from "react";
 
 const stripePromise = loadStripe(process.env.NEXT_PUBLIC_PUBLISHABLE_KEY);
 
 const RentalsDetailsPage = ({ rental }) => {
+  const [toastText, setToastText] = useState(toast);
   const router = useRouter();
   const submitCheckoutToServerHandler = async (quantity) => {
     const productData = {
@@ -31,7 +35,11 @@ const RentalsDetailsPage = ({ rental }) => {
     });
     const result = await response.json();
 
-    router.replace(result.url);
+    setToastText(toast.success("Checking out..."));
+
+    const checkoutTimer = setTimeout(function () {
+      router.replace(result.url);
+    }, 2100);
   };
 
   return (
@@ -44,6 +52,11 @@ const RentalsDetailsPage = ({ rental }) => {
           key="title"
         />
       </Head>
+      <Toaster
+        toastOptions={{
+          duration: 2000,
+        }}
+      />
       <div className="mt-12 mb-12">
         <Header subtext={rental.description} title={rental.address} />
       </div>
