@@ -24,6 +24,7 @@
 <!-- -- Add WebGL Error Handling -->
 <!-- -- Update Stripe API Handling -->
 <!-- -- Add Checkout Toast -->
+<!-- -- Add ?status=cancel for stripe route handling ((just check if router.)) -->
 
 <!-- TODO -->
 
@@ -37,15 +38,11 @@
 
 -- Add Data Caching ((rentals page))
 
--- Add ?status=cancel for stripe route handling
-
 -- Figure out how to store checkout data ((PHP would be POG for this))
 
 -- Use Jotai to replace useState
 
 -- Add Toast Notif for checkout ((wait 2-3 seconds before redirect))((setTimeout))
-
--- Figure out how to handle if a route is unavailable like "/rentals/notValid" ((probably just create a custom 500 page or something))
 
 -- Create Custom 404 Page
 
