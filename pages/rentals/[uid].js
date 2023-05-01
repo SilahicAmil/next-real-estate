@@ -8,6 +8,7 @@ import PhotoCarousel from "@/components/RentalsDetails/PhotoCarousel";
 import RentalDateRange from "@/components/RentalsDetails/RentalDateRange";
 import RentalDescription from "@/components/RentalsDetails/RentalDescription";
 import RentalInformation from "@/components/RentalsDetails/RentalInformation";
+import RentalLocationMap from "@/components/RentalsDetails/RentalLocationMap";
 import { loadStripe } from "@stripe/stripe-js";
 import { supabase } from "@/lib/supabase";
 import { useRouter } from "next/router";
@@ -79,7 +80,7 @@ const RentalsDetailsPage = ({ rental }) => {
         <RentalDateRange onCheckoutSubmit={submitCheckoutToServerHandler} />
       </div>
       <div className="mt-12 mb-12 shadow-inner">
-        <h1 className="pt-12">Locations and Reviews</h1>
+        <RentalLocationMap />
       </div>
     </>
   );
