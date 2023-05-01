@@ -38,6 +38,8 @@
 
 -- Add Data Caching ((rentals page))
 
+-- ?status=success ((send to confirmation page))
+
 -- Figure out how to store checkout data ((PHP would be POG for this))
 
 -- Use Jotai to replace useState
