@@ -13,7 +13,7 @@ const LandlordDetailsPage = ({}) => {
       </Head>
       <div>
         <h1>Landlord Details Page</h1>
-        {/* need to figma this page but have a rough idea  */}
+        {/* similiar to utah real estate realtor page */}
       </div>
     </>
   );
