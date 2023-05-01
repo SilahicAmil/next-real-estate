@@ -21,8 +21,6 @@ const helper = async (req, res) => {
       quantity: amount,
     };
 
-    console.log(transformedItem);
-
     const session = await stripe.checkout.sessions.create({
       payment_method_types: ["card"],
       line_items: [transformedItem],
