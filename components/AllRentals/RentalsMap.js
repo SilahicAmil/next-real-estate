@@ -14,6 +14,7 @@ const RentalsMap = () => {
   useEffect(() => {
     if (mapboxgl.supported() === false) {
       setWebglError(true);
+      // use regular mapbox JS map here instead of GL one
       return;
     }
     const map = new mapboxgl.Map({
