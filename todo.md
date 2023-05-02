@@ -38,7 +38,7 @@
 
 -- Add Data Caching ((rentals page))
 
--- ?status=success ((send to confirmation page))
+-- ?status=success ((send to confirmation page)) - QR Code and input to email confirmation code to an email
 
 -- Figure out how to store checkout data ((PHP would be POG for this))
 
