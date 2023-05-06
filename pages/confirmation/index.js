@@ -2,7 +2,7 @@ import Header from "@/components/UI/Header";
 import { useQRCode } from "next-qrcode";
 
 const ConfirmationPage = ({}) => {
-  const { Canvas } = useQRCode();
+  const { Image } = useQRCode();
   return (
     <>
       <div>
@@ -11,10 +11,10 @@ const ConfirmationPage = ({}) => {
           subtext="We hope you enjoy your rental!"
         />
         <div className="flex items-center w-full justify-center">
-          <Canvas
-            text="Test QR Code"
+          <Image
+            text="https://next-real-estate-nu.vercel.app/"
             options={{
-              level: "L",
+              level: "Q",
               margin: 2,
               scale: 5,
               width: 250,
@@ -23,8 +23,17 @@ const ConfirmationPage = ({}) => {
                 light: "#FFBF60FF",
               },
             }}
+            alt="QR Code"
           />
         </div>
+        {/* Download QR Code */}
+        <button>download</button>
+        {/* Send QR Code to email */}
+        <form>
+          <label htmlFor="email">Email:</label>
+          <input type="email" id="email" />
+          <button>Send Email</button>
+        </form>
       </div>
     </>
   );
