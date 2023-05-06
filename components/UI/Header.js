@@ -1,6 +1,6 @@
 const Header = ({ title, subtext }) => {
   return (
-    <section className="">
+    <section className="mt-12">
       <div className="flex flex-col justify-center items-center mb-12">
         <h1 className="lg:text-6xl md:text-5xl sm:text-5xl xs:text-4xl lsm:text-2xl  font-merriweather tracking-wider mb-2">
           {title}

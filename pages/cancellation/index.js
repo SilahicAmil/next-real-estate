@@ -1,8 +1,15 @@
+import Header from "@/components/UI/Header";
+
 const CancellationPage = () => {
   return (
     <>
       <div>
-        <h1>Cancellation Page</h1>
+        <Header
+          title="We're sorry to see you go!"
+          subtext="Let us know what we can do better. :'("
+        />
+
+        {/* form to send to dummy email */}
       </div>
     </>
   );

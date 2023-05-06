@@ -1,8 +1,13 @@
-const ConfirmationPage = () => {
+import Header from "@/components/UI/Header";
+
+const ConfirmationPage = ({}) => {
   return (
     <>
       <div>
-        <h1>Confirmation Page</h1>
+        <Header
+          title="Thank you for your purchase"
+          subtext="We hope you enjoy your rental!"
+        />
       </div>
     </>
   );
