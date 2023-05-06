@@ -25,6 +25,7 @@
 <!-- -- Update Stripe API Handling -->
 <!-- -- Add Checkout Toast -->
 <!-- -- Add ?status=cancel for stripe route handling ((just check if router.)) -->
+<!-- -- ?status=success ((send to confirmation page)) - -->
 
 <!-- TODO -->
 
@@ -36,7 +37,9 @@
 
 -- Add Geocoding Map ((https://docs.mapbox.com/mapbox-gl-js/example/mapbox-gl-geocoder/))
 
--- ?status=success ((send to confirmation page)) - QR Code and input to email confirmation code to an email
+-- Confirmation Page - QR Code and input to email confirmation code to an email
+
+-- Cancellation Page - Something like sorry to see you go. Let us know what we can do better.
 
 -- Figure out how to store checkout data ((PHP would be POG for this))
 
