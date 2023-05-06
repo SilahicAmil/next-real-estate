@@ -1,7 +1,15 @@
 import Head from "next/head";
 import Landing from "@/components/Landing/Landing";
+import { useRouter } from "next/router";
 
 const HomePage = ({}) => {
+  const router = useRouter();
+
+  console.log(router.asPath);
+
+  if (router.asPath == "/?status=success") {
+    router.replace("/confirmation");
+  }
   return (
     <>
       <Head>
