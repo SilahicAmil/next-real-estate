@@ -26,9 +26,7 @@ const ConfirmationPage = ({}) => {
             alt="QR Code"
           />
         </div>
-        {/* Download QR Code */}
-        <button>download</button>
-        {/* Send QR Code to email */}
+        {/* Send QR Code to email - AWS SQS could be used for this */}
         <form>
           <label htmlFor="email">Email:</label>
           <input type="email" id="email" />
