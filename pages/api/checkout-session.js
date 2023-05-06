@@ -26,7 +26,7 @@ const helper = async (req, res) => {
       line_items: [transformedItem],
       mode: "payment",
       success_url: `${req.headers.origin}/?status=success`,
-      cancel_url: `${req.headers.origin}/`,
+      cancel_url: `${req.headers.origin}/?status=cancel`,
     });
     res.status(201).json({ url: session.url });
   } catch (err) {

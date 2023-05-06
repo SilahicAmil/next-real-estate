@@ -5,11 +5,12 @@ import { useRouter } from "next/router";
 const HomePage = ({}) => {
   const router = useRouter();
 
-  console.log(router.asPath);
-
-  if (router.asPath == "/?status=success") {
+  if (router.asPath === "/?status=success") {
     router.replace("/confirmation");
+  } else if (router.asPath === "/?status=cancel") {
+    router.replace("/cancellation");
   }
+
   return (
     <>
       <Head>
