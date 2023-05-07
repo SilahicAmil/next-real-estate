@@ -7,7 +7,11 @@ const PhotoCarousel = ({ imageData }) => {
   return (
     <>
       <div className="lg:w-1/2">
-        <Carousel showArrows={true} showThumbs={false}>
+        <Carousel
+          showArrows={true}
+          showThumbs={false}
+          className="w-full h-full"
+        >
           {/* Map Over PhotoItem Eventually */}
           {imageData.map((photo) => {
             return (

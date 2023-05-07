@@ -1,22 +1,22 @@
 export const PHOTO_DATA = [
   {
     id: 1,
-    imagePath: "/images/test-photo.jpeg",
-    imageName: "Test Photo",
+    imagePath: "/images/place-holder-house.jpg",
+    imageName: "Test House Photo",
   },
   {
     id: 2,
-    imagePath: "/images/test-photo.jpeg",
+    imagePath: "/images/place-holder-house.jpg",
     imageName: "Test Photo",
   },
   {
     id: 3,
-    imagePath: "/images/test-photo.jpeg",
+    imagePath: "/images/place-holder-house.jpg",
     imageName: "Test Photo",
   },
   {
     id: 4,
-    imagePath: "/images/test-photo.jpeg",
+    imagePath: "/images/place-holder-house.jpg",
     imageName: "Test Photo",
   },
 ];

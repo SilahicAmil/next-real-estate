@@ -46,7 +46,7 @@ const RentalsMap = () => {
 
       const feature = features[0];
 
-      new mapboxgl.Popup({ offset: [0, -15] })
+      new mapboxgl.Popup({ offset: [0, -10] })
         .setLngLat(feature.geometry.coordinates)
         .setHTML(
           `<h3>${feature.properties.address}</h3><a href="rentals/${feature.properties.uid}" rel="noreferrer" target="_blank">View Property</a>`
