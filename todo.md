@@ -28,6 +28,7 @@
 <!-- -- ?status=success ((send to confirmation page)) - -->
 <!-- -- Cancellation Page - Something like sorry to see you go. Let us know what we can do better. -->
 <!-- -- Confirmation Page - QR Code  -->
+<!-- -- Add Toast Notif for checkout ((wait 2-3 seconds before redirect))((setTimeout)) -->
 
 <!-- TODO -->
 
@@ -46,8 +47,6 @@
 -- Figure out how to store checkout data ((PHP would be POG for this))
 
 -- Use Jotai to replace useState
-
--- Add Toast Notif for checkout ((wait 2-3 seconds before redirect))((setTimeout))
 
 -- Create Custom 404 Page
 
