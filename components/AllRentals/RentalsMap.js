@@ -12,9 +12,15 @@ const RentalsMap = () => {
   const mapContainer = useRef();
 
   useEffect(() => {
-    if (mapboxgl.supported() === false) {
+    if (
+      mapboxgl.supported() === false &&
+      // detects if browser is chrome
+      navigator.userAgent.indexOf("Chrome") != -1
+    ) {
       setWebglError(true);
-      // use regular mapbox JS map here instead of GL one
+      // since mapbox stictly uses webGL
+      // put a link here on how to enable webGL
+      // better User Experience probably
       return;
     }
     const map = new mapboxgl.Map({
@@ -27,8 +33,6 @@ const RentalsMap = () => {
 
     map.on("load", () => {
       setMapInstance(map);
-
-      // map.resize();
     });
 
     map.on("click", (event) => {
