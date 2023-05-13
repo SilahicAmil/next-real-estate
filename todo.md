@@ -34,8 +34,6 @@
 
 -- https://supabase.com/docs/reference/javascript/filter - check this out for filtering data directly in supabase (API router filtering)
 
--- Confirmation email and text should be sent after checkout ((not sure how to do this yet))
-
 -- Add Testing ((Very crucial for the STRIPE checkout stuff))
 
 -- Add Geocoding Map ((https://docs.mapbox.com/mapbox-gl-js/example/mapbox-gl-geocoder/))
