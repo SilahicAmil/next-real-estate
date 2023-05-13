@@ -17,6 +17,7 @@ const stripePromise = loadStripe(process.env.NEXT_PUBLIC_PUBLISHABLE_KEY);
 
 const RentalsDetailsPage = ({ rental }) => {
   const router = useRouter();
+
   const submitCheckoutToServerHandler = async (quantity) => {
     const productData = {
       name: rental.address,
