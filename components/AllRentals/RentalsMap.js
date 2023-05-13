@@ -12,11 +12,7 @@ const RentalsMap = () => {
   const mapContainer = useRef();
 
   useEffect(() => {
-    if (
-      mapboxgl.supported() === false &&
-      // detects if browser is chrome
-      navigator.userAgent.indexOf("Chrome") != -1
-    ) {
+    if (mapboxgl.supported() === false) {
       setWebglError(true);
       // since mapbox stictly uses webGL
       // put a link here on how to enable webGL
