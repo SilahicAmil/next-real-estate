@@ -38,7 +38,7 @@ const LandingHero = ({}) => {
 
               <Link
                 href="/rentals"
-                className="mt-8 inline-block  bg-[#1C3988] rounded-md px-12 py-3 font-medium text-lg text-white  hover:rounded-xl hover:duration-200"
+                className="mt-8 inline-block bg-darkBlue rounded-md px-12 py-3 font-medium text-lg text-white  hover:rounded-xl hover:duration-200"
               >
                 Look at our offers
               </Link>

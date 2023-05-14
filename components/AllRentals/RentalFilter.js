@@ -65,7 +65,7 @@ const RentalFilter = ({ states, bedrooms, onUpdateFilter }) => {
                   })}
                 </select>
               </div>
-              <div className="bg-[#1C3988]  rounded-md hover:rounded-lg hover:duration-200 justify-center items-center flex">
+              <div className="bg-darkBlue  rounded-md hover:rounded-lg hover:duration-200 justify-center items-center flex">
                 <button
                   className="w-32 h-full p-2  text-white flex items-center justify-center gap-4 "
                   type="submit"

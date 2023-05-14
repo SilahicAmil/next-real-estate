@@ -27,6 +27,9 @@ module.exports = {
         "2xl": "1536px",
         // => @media (min-width: 1536px) { ... }
       },
+      colors: {
+        darkBlue: "#1C3988",
+      },
     },
   },
   plugins: [],

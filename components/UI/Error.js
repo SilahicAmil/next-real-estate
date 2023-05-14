@@ -31,7 +31,7 @@ const Error = () => {
         <center className="mt-6">
           <button
             onClick={() => router.replace("/")}
-            className="text-gray-500 font-mono text-xl bg-gray-200 p-3 w-52 rounded-md hover:rounded-xl hover:duration-100"
+            className="text-white font-mono text-xl bg-darkBlue p-3 w-52 rounded-md hover:rounded-xl hover:duration-100"
           >
             Go Home
           </button>
