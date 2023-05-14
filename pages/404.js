@@ -7,9 +7,7 @@ const ErrorPage = ({}) => {
       <Head>
         <title>Real Esate - 404</title>
       </Head>
-      <div className="h-full">
-        <Error />
-      </div>
+      <Error />
     </>
   );
 };

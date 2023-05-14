@@ -55,14 +55,17 @@ const RentalsDetailsPage = ({ rental }) => {
           key="title"
         />
       </Head>
+
       <Toaster
         toastOptions={{
           duration: 2000,
         }}
       />
+
       <div className="mt-12 mb-12">
         <Header subtext={rental.description} title={rental.address} />
       </div>
+
       <div className="lg:flex justify-center gap-24 mb-12 mt-12 h-full shadow-inner pt-12">
         <PhotoCarousel imageData={PHOTO_DATA} />
         <LandlordCard
@@ -71,15 +74,18 @@ const RentalsDetailsPage = ({ rental }) => {
           phone={rental.landlord_phone}
         />
       </div>
+
       <RentalInformation
         sqft={rental.sqft}
         location={rental.state}
         pricing={rental.price}
       />
+
       <div className="lg:flex justify-around h-full shadow-inner pt-12 pb-12">
         <RentalDescription longDescription={rental.longDescription} />
         <RentalDateRange onCheckoutSubmit={submitCheckoutToServerHandler} />
       </div>
+
       <div className="mt-12 mb-12 shadow-inner">
         <RentalLocationMap />
       </div>

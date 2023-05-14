@@ -65,16 +65,19 @@ const AllRentalsPage = ({ rentals }) => {
           key="title"
         />
       </Head>
+
       <div className="mb-12 mt-12">
         <Header
           subtext="Choose from the most advantageous offers"
           title="Search for a Rental"
         />
+
         <RentalFilter
           states={sortedStates}
           bedrooms={sortedBedrooms}
           onUpdateFilter={filterUpdateHandler}
         />
+
         <div className="lg:w-full lg:flex">
           <RentalsMap />
           <div className="grid lg:grid-cols-3 md:grid-cols-2 lsm:grid-cols-2 sm:grid-cols-1 xs:grid-cols-1 gap-2 mt-12 lg:w-full m-4 h-full">

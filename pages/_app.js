@@ -28,6 +28,7 @@ export default function App({ Component, pageProps }) {
       Router.events.off("routeChangeError", end);
     };
   }, []);
+
   switch (Component.displayName) {
     case "errorPage":
       return <Component {...pageProps} />;

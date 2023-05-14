@@ -19,10 +19,6 @@ const ConfirmationPage = ({}) => {
               margin: 2,
               scale: 5,
               width: 250,
-              color: {
-                dark: "#010599FF",
-                light: "#FFBF60FF",
-              },
             }}
             alt="QR Code"
           />
