@@ -1,6 +1,6 @@
 import { MagnifyingGlass } from "react-loader-spinner";
 
-const Loading = ({ isLoading }) => {
+const Loading = ({}) => {
   return (
     <>
       <div className="h-[100vh] w-full flex items-center justify-center">
