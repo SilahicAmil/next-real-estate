@@ -29,6 +29,7 @@
 <!-- -- Cancellation Page - Something like sorry to see you go. Let us know what we can do better. -->
 <!-- -- Confirmation Page - QR Code  -->
 <!-- -- Add Toast Notif for checkout ((wait 2-3 seconds before redirect))((setTimeout)) -->
+<!-- -- Create Custom 404 Page -->
 
 <!-- TODO -->
 
@@ -42,10 +43,8 @@
 
 -- Add SQS for sending emails from confirmation page
 
--- Figure out how to store checkout data ((PHP would be POG for this))
+-- Figure out how to store checkout data
 
 -- Use Jotai to replace useState
-
--- Create Custom 404 Page
 
 -- Add Landlord Profile ((should show the landlord information and their rentals))((Similiar to UtahRealEstate.com))
