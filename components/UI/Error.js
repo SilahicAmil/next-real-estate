@@ -10,12 +10,13 @@ const Error = () => {
           <Loading />
         </div>
         <center className="mt-24 m-auto">
-          <div className=" tracking-widest mt-4">
+          <div className="tracking-wider mt-4">
             <span className="text-gray-500 text-6xl block">
               <span>4&nbsp;0&nbsp;4</span>
             </span>
             <span className="text-gray-500 text-xl">
-              Sorry, We couldn&#39;t find what you are looking for!
+              Our team of highly trained monkeys, couldn&#39;t find what you are
+              looking for!
             </span>
           </div>
         </center>
