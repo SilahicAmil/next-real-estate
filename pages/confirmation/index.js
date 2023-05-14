@@ -5,6 +5,7 @@ const ConfirmationPage = ({}) => {
   const { Image } = useQRCode();
   return (
     <>
+      <h1 className="bg-red-500 h-32 text-8xl">WORK IN PROGRESS</h1>
       <div>
         <Header
           title="Thank you for your purchase"
@@ -27,7 +28,7 @@ const ConfirmationPage = ({}) => {
           />
         </div>
         {/* Send QR Code to email - AWS SQS could be used for this */}
-        <form>
+        <form className="">
           <label htmlFor="email">Email:</label>
           <input type="email" id="email" />
           <button>Send Email</button>
