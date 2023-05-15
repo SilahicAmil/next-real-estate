@@ -15,7 +15,7 @@ const Navigation = ({}) => {
           <div className="container mx-auto px-4">
             <div className="flex items-center justify-between py-4">
               <div>
-                <Link href="/" className="hover:underline">
+                <Link href="/" className="hover:underline hover:cursor-pointer">
                   REAL ESTATE
                 </Link>
               </div>
@@ -23,28 +23,28 @@ const Navigation = ({}) => {
               <div className="hidden md:flex sm:items-center">
                 <Link
                   href="/rentals"
-                  className="text-gray-800 text-sm font-semibold mr-4"
+                  className="text-gray-800 text-sm font-semibold mr-4 hover:underline hover:cursor-pointer"
                 >
                   Rentals
                 </Link>
                 <Link
                   href="/#testimonials"
                   scroll={false}
-                  className="text-gray-800 text-sm font-semibold mr-4"
+                  className="text-gray-800 text-sm font-semibold mr-4 hover:underline hover:cursor-pointer"
                 >
                   Testimonials
                 </Link>
                 <Link
                   href="/#about"
                   scroll={false}
-                  className="text-gray-800 text-sm font-semibold mr-4"
+                  className="text-gray-800 text-sm font-semibold mr-4 hover:underline hover:cursor-pointer"
                 >
                   About Us
                 </Link>
                 <Link
                   href="/#team"
                   scroll={false}
-                  className="text-gray-800 text-sm font-semibold"
+                  className="text-gray-800 text-sm font-semibold hover:underline hover:cursor-pointer"
                 >
                   Our Team
                 </Link>
