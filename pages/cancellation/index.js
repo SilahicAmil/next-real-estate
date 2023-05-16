@@ -1,3 +1,4 @@
+import ContactForm from "@/components/Contact/ContactForm";
 import Header from "@/components/UI/Header";
 
 const CancellationPage = () => {
@@ -10,7 +11,7 @@ const CancellationPage = () => {
           subtext="Let us know what we can do better. :'("
         />
 
-        {/* form to send to dummy email */}
+        <ContactForm />
       </div>
     </>
   );
