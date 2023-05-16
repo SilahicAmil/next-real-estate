@@ -30,6 +30,7 @@
 <!-- -- Confirmation Page - QR Code  -->
 <!-- -- Add Toast Notif for checkout ((wait 2-3 seconds before redirect))((setTimeout)) -->
 <!-- -- Create Custom 404 Page -->
+<!-- -- Add "Contact Form" to cancellation -->
 
 <!-- TODO -->
 
@@ -38,8 +39,6 @@
 -- Add Testing ((Very crucial for the STRIPE checkout stuff))
 
 -- Add Geocoding Map ((https://docs.mapbox.com/mapbox-gl-js/example/mapbox-gl-geocoder/))
-
--- Add "Contact Form" to cancellation
 
 -- Add SQS for sending emails from confirmation page
 
