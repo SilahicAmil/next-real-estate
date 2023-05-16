@@ -58,7 +58,7 @@ const RentalsMap = () => {
       {webglError ? (
         <div className="lg:w-full rounded-lg mt-12 m-4">
           <h1 className="text-2xl tracking-wider">
-            Please Enable WebGL to View Map.
+            Please Enable WebGL/Hardware Acceleration to View Map.
           </h1>
         </div>
       ) : (
