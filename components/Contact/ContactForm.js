@@ -40,7 +40,7 @@ const ContactForm = ({}) => {
               id="message"
               cols="50"
               rows="5"
-              placeholder="Type your message here..."
+              placeholder="This form currently does nothing sorry..."
               className="bg-gray-200 rounded-md"
             />
           </div>
