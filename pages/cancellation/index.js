@@ -4,7 +4,7 @@ import Header from "@/components/UI/Header";
 const CancellationPage = () => {
   return (
     <>
-      <h1 className="bg-red-500 h-32 text-8xl">WORK IN PROGRESS</h1>
+      <h1 className="bg-red-500  text-6xl">WORK IN PROGRESS</h1>
       <div>
         <Header
           title="We're sorry to see you go!"
