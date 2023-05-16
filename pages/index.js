@@ -7,7 +7,9 @@ const HomePage = ({}) => {
 
   if (router.asPath === "/?status=success") {
     router.replace("/confirmation");
-  } else if (router.asPath === "/?status=cancel") {
+  }
+
+  if (router.asPath === "/?status=cancel") {
     router.replace("/cancellation");
   }
 
