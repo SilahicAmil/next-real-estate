@@ -12,7 +12,7 @@ const LandlordDetailsPage = ({}) => {
         />
       </Head>
       <div>
-        <h1 className="bg-red-500  text-6xl">WORK IN PROGRESS</h1>
+        <h1 className="bg-red-500 text-6xl">WORK IN PROGRESS</h1>
         <h1>Landlord Details Page</h1>
         {/* similiar to utah real estate realtor page */}
       </div>
