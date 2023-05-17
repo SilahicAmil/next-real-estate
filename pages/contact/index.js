@@ -18,10 +18,8 @@ const ContactUsPage = ({}) => {
         title="Contact Us"
         subtext="Let us know any issues you encounter!"
       />
-
-      <div>
-        <ContactForm />
-      </div>
+      {/* sends email to contact@realestate.com */}
+      <ContactForm />
     </>
   );
 };

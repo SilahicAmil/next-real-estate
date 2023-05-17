@@ -42,6 +42,8 @@
 
 -- Add SQS for sending emails from confirmation page
 
+-- Create email template for confirmation email via SQS
+
 -- Figure out how to store checkout data
 
 -- Use Jotai to replace useState
