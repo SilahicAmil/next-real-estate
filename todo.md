@@ -40,9 +40,9 @@
 
 -- Add Geocoding Map ((https://docs.mapbox.com/mapbox-gl-js/example/mapbox-gl-geocoder/))
 
--- Add SQS for sending emails from confirmation page
+-- Add SES for sending emails from confirmation page
 
--- Create email template for confirmation email via SQS
+-- Create email template for confirmation email via SES
 
 -- Figure out how to store checkout data
 
