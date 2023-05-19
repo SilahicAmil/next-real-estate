@@ -44,6 +44,8 @@
 
 -- Create email template for confirmation email via SES
 
+-- Checkout https://github.com/resendlabs/react-email for sending emails
+
 -- Figure out how to store checkout data
 
 -- Use Jotai to replace useState
