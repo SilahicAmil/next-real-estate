@@ -3,6 +3,7 @@ const RentalLocationMap = () => {
     <>
       <div>
         <h1>Rental Location Map</h1>
+        {/* ((https://docs.mapbox.com/mapbox-gl-js/example/mapbox-gl-geocoder/)) */}
       </div>
     </>
   );
