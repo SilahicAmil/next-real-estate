@@ -40,9 +40,7 @@
 
 -- Add Geocoding Map ((https://docs.mapbox.com/mapbox-gl-js/example/mapbox-gl-geocoder/))
 
--- Add SES for sending emails from confirmation page
-
--- Create email template for confirmation email via SES
+-- Add SES for sending emails from confirmation page - create email template also
 
 -- Checkout https://github.com/resendlabs/react-email for sending emails
 
@@ -50,4 +48,4 @@
 
 -- Use Jotai to replace useState
 
--- Add Landlord Profile ((should show the landlord information and their rentals))((Similiar to UtahRealEstate.com))
+-- Add Landlord Profile ((Similiar to UtahRealEstate.com))
