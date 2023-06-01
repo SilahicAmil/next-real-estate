@@ -12,7 +12,7 @@ const RentalDateRange = ({ onCheckoutSubmit }) => {
   const checkoutFormSubmitHandler = (e) => {
     e.preventDefault();
     let quantity = 0;
-    // might change this to a if else statement to make it more readable
+
     calcDates === 0 ? (quantity = 1) : (quantity = calcDates);
 
     onCheckoutSubmit(quantity);
